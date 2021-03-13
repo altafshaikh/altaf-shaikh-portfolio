@@ -13,12 +13,9 @@ export default function topNavbar({ logo }) {
         className="mx-5 pt-3"
       >
         <Navbar.Brand href="#contentstack">
-          <Image
-            src={logo}
-            alt="contentstack company logo"
-            width={200}
-            height={35}
-          />
+          <h1 className={navStyles["name"]}>
+            Altaf<span className={navStyles["surname"]}>.Shaikh</span>
+          </h1>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav" className="text-center">
