@@ -9,7 +9,7 @@ import moskFont from "./bannerStyle.module.css";
 
 export default function Banner({ heroContent }) {
   return (
-    <div className="" style={{ height: "100vh" }}>
+    <div className="" style={{ height: "90vh" }}>
       <Row>
         <Col md={6}>
           <div className={bannerStyles["wrapper"]}>

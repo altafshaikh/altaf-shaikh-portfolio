@@ -20,7 +20,6 @@ export default function Home(props) {
     <div>
       <Layout
         title="Altaf Shaikh - Software Developer"
-        favicon={props.userData.favicon}
         footerContent={{
           socialLinks: props.userData.socialLinks,
           logo: props.userData.companyLogoBlack,

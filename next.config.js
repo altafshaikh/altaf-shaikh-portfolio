@@ -6,6 +6,7 @@ module.exports = (phase, { defaultConfig }) => {
         "www.contentstack.com",
         "www.raweng.com",
         "www.surfboardventures.com",
+        "altafshaikh.github.io",
       ],
     },
   };
