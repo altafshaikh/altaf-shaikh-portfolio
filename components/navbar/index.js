@@ -3,10 +3,15 @@ import navStyles from "./index.module.scss";
 import Link from "next/link";
 import Image from "next/image";
 
-export default function contentstackNavbar({ logo }) {
+export default function topNavbar({ logo }) {
   return (
     <>
-      <Navbar collapseOnSelect expand="lg" variant="dark" className="mx-5 pt-3">
+      <Navbar
+        collapseOnSelect
+        expand="lg"
+        variant="light"
+        className="mx-5 pt-3"
+      >
         <Navbar.Brand href="#contentstack">
           <Image
             src={logo}
@@ -16,34 +21,28 @@ export default function contentstackNavbar({ logo }) {
           />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-        <Navbar.Collapse id="responsive-navbar-nav" className="px-2">
-          <Nav className="ml-auto">
+        <Navbar.Collapse id="responsive-navbar-nav" className="text-center">
+          <Nav className="ml-auto mr-5 pr-5">
             <Link href="/">
               <a className={["nav-link", navStyles["nav-links"]].join(" ")}>
                 Home
               </a>
             </Link>
             <Nav.Link href="#Product" className={navStyles["nav-links"]}>
-              Product
+              Writing
             </Nav.Link>
             <Nav.Link href="#Education" className={navStyles["nav-links"]}>
-              Education
+              Speaking
             </Nav.Link>
             <Nav.Link href="#Partners" className={navStyles["nav-links"]}>
-              Partners
+              Workshop
             </Nav.Link>
             <Nav.Link href="#Company" className={navStyles["nav-links"]}>
-              Company
+              Tutorials
             </Nav.Link>
             <Nav.Link href="#Pricing" className={navStyles["nav-links"]}>
-              Pricing
+              About
             </Nav.Link>
-            <Button
-              className={["px-4 ml-3", navStyles["try-btn"]].join(" ")}
-              variant="primary"
-            >
-              Try For Free
-            </Button>
           </Nav>
         </Navbar.Collapse>
       </Navbar>
