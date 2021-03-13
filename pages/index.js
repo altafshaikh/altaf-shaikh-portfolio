@@ -6,7 +6,7 @@ import Navbar from "../components/navbar";
 import Banner from "../components/banner";
 
 // constants
-import { contentstackDataURI } from "../../constants/endpoints";
+import { contentstackDataURI } from "../constants/endpoints";
 
 import styles from "../styles/Home.module.css";
 
