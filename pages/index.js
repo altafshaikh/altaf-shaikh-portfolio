@@ -1,9 +1,9 @@
 import axios from "axios";
 
 // components
-import Layout from "../../components/Layout";
-import Navbar from "../../components/contentstack/navbar";
-import Banner from "../../components/contentstack/banner";
+import Layout from "../components/Layout";
+import Navbar from "../components/navbar";
+import Banner from "../components/banner";
 
 // constants
 import { contentstackDataURI } from "../../constants/endpoints";
