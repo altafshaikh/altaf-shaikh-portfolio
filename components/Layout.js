@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Footer from "./footer/index";
 
 export default function Layout({
   children,
