@@ -11,11 +11,9 @@ import { homeData } from "../constants/jsonEndpoint";
 import styles from "../styles/Home.module.css";
 
 export default function Home(props) {
-  const headerStyle = {
-    // backgroundImage: `url(${props.userData.bannerImages[0]})`,
-    // backgroundPosition: "center",
-    // backgroundSize: "cover",
-    // backgroundRepeat: "no-repeat",
+  const headerBackground = {
+    background:
+      "linear-gradient(to left, rgb(111,220,191) 0%, rgb(111,220,191) 73%, white 55%, white 100%)",
     width: "100%",
   };
   return (
@@ -28,7 +26,7 @@ export default function Home(props) {
           logo: props.userData.companyLogoBlack,
         }}
       >
-        <header style={headerStyle}>
+        <header style={headerBackground}>
           <Navbar logo={props.userData.companyLogowhite} />
           <Banner heroContent={props.userData.heroContent} />
         </header>
