@@ -5,6 +5,8 @@ import parse from "html-react-parser";
 import bannerStyles from "./index.module.scss";
 import HeroSvg from "./heroSvg";
 
+import moskFont from "./bannerStyle.module.css";
+
 export default function Banner({ heroContent }) {
   return (
     <div className="" style={{ height: "100vh" }}>
@@ -20,6 +22,7 @@ export default function Banner({ heroContent }) {
               className={[
                 bannerStyles["Hero__eyebrow"],
                 bannerStyles["font-cursive"],
+                bannerStyles["h5"],
               ].join(" ")}
             >
               👋 <span>{heroContent.heroEyebrow}</span>
@@ -28,9 +31,29 @@ export default function Banner({ heroContent }) {
               className={[
                 bannerStyles["Hero__heading"],
                 bannerStyles["h1"],
+                moskFont["mosk-font"],
               ].join(" ")}
             >
-              {parse(heroContent.heroHeading)}
+              I like making{" "}
+              <a href="#" className={[bannerStyles["outline"]].join(" ")}>
+                fun
+              </a>
+              , <span className="js-interactive">interactive</span> things with
+              code. I also{" "}
+              <a
+                href="#speaking"
+                className={[bannerStyles["outline"]].join(" ")}
+              >
+                talk{" "}
+              </a>
+              &{" "}
+              <a
+                href="#writing"
+                className={[bannerStyles["outline"]].join(" ")}
+              >
+                write{" "}
+              </a>
+              about those things.
             </h1>
           </div>
         </Col>
