@@ -6,31 +6,31 @@ import Navbar from "../components/navbar";
 import Banner from "../components/banner";
 
 // constants
-import { contentstackDataURI } from "../constants/jsonEndpoint";
+import { homeData } from "../constants/jsonEndpoint";
 
 import styles from "../styles/Home.module.css";
 
 export default function Home(props) {
   const headerStyle = {
-    backgroundImage: `url(${props.companyData.bannerImages[0]})`,
-    backgroundPosition: "center",
-    backgroundSize: "cover",
-    backgroundRepeat: "no-repeat",
+    // backgroundImage: `url(${props.userData.bannerImages[0]})`,
+    // backgroundPosition: "center",
+    // backgroundSize: "cover",
+    // backgroundRepeat: "no-repeat",
     width: "100%",
   };
   return (
     <div>
       <Layout
         title="Altaf Shaikh - Software Developer"
-        favicon={props.companyData.favicon}
+        favicon={props.userData.favicon}
         footerContent={{
-          socialLinks: props.companyData.socialLinks,
-          logo: props.companyData.companyLogoBlack,
+          socialLinks: props.userData.socialLinks,
+          logo: props.userData.companyLogoBlack,
         }}
       >
         <header style={headerStyle}>
-          <Navbar logo={props.companyData.companyLogowhite} />
-          <Banner heroContent={props.companyData.heroContent} />
+          <Navbar logo={props.userData.companyLogowhite} />
+          <Banner heroContent={props.userData.heroContent} />
         </header>
       </Layout>
     </div>
@@ -38,9 +38,9 @@ export default function Home(props) {
 }
 
 export const getStaticProps = async (context) => {
-  let { data } = await axios(contentstackDataURI);
+  let { data } = await axios(homeData);
 
   return {
-    props: { companyData: { ...data[0] } },
+    props: { userData: { ...data[0] } },
   };
 };
