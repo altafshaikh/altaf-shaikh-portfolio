@@ -1,0 +1,47 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+h1.hero-heading {
+  font-size: 60px;
+  line-height: 70px;
+  font-weight: bold;
+}
+
+p.hero-content {
+  font-family: Montserrat, sans-serif;
+  line-height: 1.4;
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+.try-btn {
+  background-color: #eb5646;
+  border: 3px solid transparent;
+
+  letter-spacing: 1.1px;
+  &:hover {
+    background-color: transparent;
+    border: 3px solid #eb5646;
+  }
+}
+
+.request-text {
+  a {
+    color: #eb5646;
+    text-decoration: none;
+    &:hover {
+      color: white;
+    }
+  }
+}
+
+@media (max-width: 425px) {
+  h1.hero-heading {
+    font-size: 40px;
+    line-height: 55px;
+  }
+
+  p.hero-content {
+    font-size: 16px;
+    margin-top: 10px;
+  }
+}
