@@ -1,0 +1,21 @@
+@import "variables_mixins";
+@import "bootstrap";
+
+body {
+  overflow-x: hidden;
+}
+
+// * {
+//   border: 1px solid red;
+// }
+
+@media (max-width: 770px) {
+  .row {
+    margin-right: 0px !important;
+    margin-left: 0px !important;
+  }
+  .container {
+    padding-right: 0px !important;
+    padding-left: 0px !important;
+  }
+}
