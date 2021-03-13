@@ -1,21 +1,46 @@
-import Head from "next/head";
+import axios from "axios";
+
+// components
+import Layout from "../../components/Layout";
+import Navbar from "../../components/contentstack/navbar";
+import Banner from "../../components/contentstack/banner";
+
+// constants
+import { contentstackDataURI } from "../../constants/endpoints";
+
 import styles from "../styles/Home.module.css";
 
-export default function Home() {
+export default function Home(props) {
+  const headerStyle = {
+    backgroundImage: `url(${props.companyData.bannerImages[0]})`,
+    backgroundPosition: "center",
+    backgroundSize: "cover",
+    backgroundRepeat: "no-repeat",
+    width: "100%",
+  };
   return (
     <div>
-      <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-
-      <main>
-        <h1>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
-      </main>
-
-      <footer></footer>
+      <Layout
+        title="Altaf Shaikh - Software Developer"
+        favicon={props.companyData.favicon}
+        footerContent={{
+          socialLinks: props.companyData.socialLinks,
+          logo: props.companyData.companyLogoBlack,
+        }}
+      >
+        <header style={headerStyle}>
+          <Navbar logo={props.companyData.companyLogowhite} />
+          <Banner heroContent={props.companyData.heroContent} />
+        </header>
+      </Layout>
     </div>
   );
 }
+
+export const getStaticProps = async (context) => {
+  let { data } = await axios(contentstackDataURI);
+
+  return {
+    props: { companyData: { ...data[0] } },
+  };
+};

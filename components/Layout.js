@@ -4,7 +4,6 @@ export default function Layout({
   children,
   favicon = "vercel.svg",
   title = "Altaf Shaikh",
-  Footer,
   footerContent,
 }) {
   return (
