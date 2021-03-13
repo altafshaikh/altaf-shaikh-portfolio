@@ -1,0 +1,18 @@
+.nav-links {
+  color: rgb(255, 255, 255) !important;
+  border-bottom: 1px solid transparent;
+  &:hover {
+    border-bottom: 1px solid rgb(255, 255, 255);
+  }
+}
+
+.try-btn {
+  background-color: #eb5646;
+  border: 3px solid transparent;
+
+  letter-spacing: 1.1px;
+  &:hover {
+    background-color: transparent;
+    border: 3px solid #eb5646;
+  }
+}
