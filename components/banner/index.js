@@ -6,6 +6,7 @@ import bannerStyles from "./index.module.scss";
 import HeroSvg from "./heroSvg";
 
 import moskFont from "./bannerStyle.module.css";
+import Typing from "../Typing";
 
 export default function Banner({ heroContent }) {
   return (
@@ -17,7 +18,7 @@ export default function Banner({ heroContent }) {
           </div>
         </Col>
         <Col md={6}>
-          <div className="pt-5 w-75">
+          <div className="pt-5 w-72">
             <p
               className={[
                 bannerStyles["Hero__eyebrow"],
@@ -27,6 +28,7 @@ export default function Banner({ heroContent }) {
             >
               👋 <span>{heroContent.heroEyebrow}</span>
             </p>
+
             <h1
               className={[
                 bannerStyles["Hero__heading"],
@@ -34,27 +36,31 @@ export default function Banner({ heroContent }) {
                 moskFont["mosk-font"],
               ].join(" ")}
             >
-              I like making{" "}
-              <a href="#" className={[bannerStyles["outline"]].join(" ")}>
-                fun
-              </a>
-              , <span className="js-interactive">interactive</span> things with
-              code. I also{" "}
+              I'm <Typing />
+            </h1>
+            <p
+              className={[
+                "w-75",
+                bannerStyles["Hero__heading"],
+                bannerStyles["h1"],
+                moskFont["mosk-font"],
+              ].join(" ")}
+            >
+              Also I ❤️ to share knowledge by{" "}
               <a
                 href="#speaking"
                 className={[bannerStyles["outline"]].join(" ")}
               >
-                talk{" "}
+                talking{" "}
               </a>
               &{" "}
               <a
                 href="#writing"
                 className={[bannerStyles["outline"]].join(" ")}
               >
-                write{" "}
+                writing{" "}
               </a>
-              about those things.
-            </h1>
+            </p>
           </div>
         </Col>
       </Row>

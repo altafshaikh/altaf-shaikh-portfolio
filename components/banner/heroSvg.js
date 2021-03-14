@@ -270,13 +270,12 @@ function HeroSvg() {
                 <g>
                   <path
                     fill="#a3848d"
-                    strokeDasharray="0px, 999999px"
-                    strokeDashoffset="150.06"
                     d="M210.54 250.33H281.5V253.4H210.54z"
                     className="line"
                     data-name="line"
                     data-svg-origin="210.5399932861328 250.3300018310547"
                     opacity="0.39"
+                    transform="matrix(0 0 0 1 210.54 0)"
                     style={{
                       WebkitTransformOrigin: 0,
                       MsTransformOrigin: 0,
@@ -285,13 +284,12 @@ function HeroSvg() {
                   ></path>
                   <path
                     fill="#a58492"
-                    strokeDasharray="0px, 999999px"
-                    strokeDashoffset="159.26"
                     d="M210.54 256.92H286.1V259.99H210.54z"
                     className="line"
                     data-name="line"
                     data-svg-origin="210.5399932861328 256.9200134277344"
                     opacity="0.39"
+                    transform="matrix(0 0 0 1 210.54 0)"
                     style={{
                       WebkitTransformOrigin: 0,
                       MsTransformOrigin: 0,
@@ -300,13 +298,12 @@ function HeroSvg() {
                   ></path>
                   <path
                     fill="#a284a3"
-                    strokeDasharray="0px, 999999px"
-                    strokeDashoffset="131.3"
                     d="M210.54 263.57H272.12V266.64H210.54z"
                     className="line"
                     data-name="line"
                     data-svg-origin="210.5399932861328 263.57000732421875"
                     opacity="0.39"
+                    transform="matrix(0 0 0 1 210.54 0)"
                     style={{
                       WebkitTransformOrigin: 0,
                       MsTransformOrigin: 0,
@@ -315,13 +312,12 @@ function HeroSvg() {
                   ></path>
                   <path
                     fill="#9084a0"
-                    strokeDasharray="0px, 999999px"
-                    strokeDashoffset="113.5"
                     d="M210.54 270.28H263.21999999999997V273.34999999999997H210.54z"
                     className="line"
                     data-name="line"
                     data-svg-origin="210.5399932861328 270.2799987792969"
                     opacity="0.39"
+                    transform="matrix(0 0 0 1 210.54 0)"
                     style={{
                       WebkitTransformOrigin: 0,
                       MsTransformOrigin: 0,
@@ -330,13 +326,12 @@ function HeroSvg() {
                   ></path>
                   <path
                     fill="#83859e"
-                    strokeDasharray="0px, 999999px"
-                    strokeDashoffset="95.5"
                     d="M210.54 276.86H254.22V279.93H210.54z"
                     className="line"
                     data-name="line"
                     data-svg-origin="210.5399932861328 276.8599853515625"
                     opacity="0.39"
+                    transform="matrix(0 0 0 1 210.54 0)"
                     style={{
                       WebkitTransformOrigin: 0,
                       MsTransformOrigin: 0,
@@ -345,13 +340,12 @@ function HeroSvg() {
                   ></path>
                   <path
                     fill="#83929b"
-                    strokeDasharray="0px, 999999px"
-                    strokeDashoffset="154.3"
                     d="M210.54 283.56H283.62V286.63H210.54z"
                     className="line"
                     data-name="line"
                     data-svg-origin="210.5399932861328 283.55999755859375"
                     opacity="0.39"
+                    transform="matrix(0 0 0 1 210.54 0)"
                     style={{
                       WebkitTransformOrigin: 0,
                       MsTransformOrigin: 0,
@@ -360,13 +354,12 @@ function HeroSvg() {
                   ></path>
                   <path
                     fill="#829995"
-                    strokeDasharray="0px, 999999px"
-                    strokeDashoffset="179.58"
                     d="M210.54 290.42H296.26V293.49H210.54z"
                     className="line"
                     data-name="line"
                     data-svg-origin="210.5399932861328 290.4200134277344"
                     opacity="0.39"
+                    transform="matrix(0 0 0 1 210.54 0)"
                     style={{
                       WebkitTransformOrigin: 0,
                       MsTransformOrigin: 0,
@@ -375,13 +368,12 @@ function HeroSvg() {
                   ></path>
                   <path
                     fill="#84998b"
-                    strokeDasharray="0px, 999999px"
-                    strokeDashoffset="151.22"
                     d="M210.54 296.86H282.08V299.93H210.54z"
                     className="line"
                     data-name="line"
                     data-svg-origin="210.5399932861328 296.8599853515625"
                     opacity="0.39"
+                    transform="matrix(0 0 0 1 210.54 0)"
                     style={{
                       WebkitTransformOrigin: 0,
                       MsTransformOrigin: 0,
@@ -390,13 +382,12 @@ function HeroSvg() {
                   ></path>
                   <path
                     fill="#899985"
-                    strokeDasharray="0px, 999999px"
-                    strokeDashoffset="143.18"
                     d="M210.54 303.51H278.06V306.58H210.54z"
                     className="line"
                     data-name="line"
                     data-svg-origin="210.5399932861328 303.510009765625"
                     opacity="0.39"
+                    transform="matrix(0 0 0 1 210.54 0)"
                     style={{
                       WebkitTransformOrigin: 0,
                       MsTransformOrigin: 0,
@@ -405,13 +396,12 @@ function HeroSvg() {
                   ></path>
                   <path
                     fill="#979987"
-                    strokeDasharray="0px, 999999px"
-                    strokeDashoffset="72.34"
                     d="M210.54 310.1H242.64V313.17H210.54z"
                     className="line"
                     data-name="line"
                     data-svg-origin="210.5399932861328 310.1000061035156"
                     opacity="0.39"
+                    transform="matrix(0 0 0 1 210.54 0)"
                     style={{
                       WebkitTransformOrigin: 0,
                       MsTransformOrigin: 0,
@@ -420,13 +410,12 @@ function HeroSvg() {
                   ></path>
                   <path
                     fill="#999488"
-                    strokeDasharray="0px, 999999px"
-                    strokeDashoffset="195.1"
                     d="M210.54 316.75H304.02V319.82H210.54z"
                     className="line"
                     data-name="line"
                     data-svg-origin="210.5399932861328 316.75"
                     opacity="0.39"
+                    transform="matrix(0 0 0 1 210.54 0)"
                     style={{
                       WebkitTransformOrigin: 0,
                       MsTransformOrigin: 0,
@@ -435,13 +424,12 @@ function HeroSvg() {
                   ></path>
                   <path
                     fill="#998e8a"
-                    strokeDasharray="0px, 999999px"
-                    strokeDashoffset="143.18"
                     d="M210.54 323.4H278.06V326.46999999999997H210.54z"
                     className="line"
                     data-name="line"
                     data-svg-origin="210.5399932861328 323.3999938964844"
                     opacity="0.39"
+                    transform="matrix(0 0 0 1 210.54 0)"
                     style={{
                       WebkitTransformOrigin: 0,
                       MsTransformOrigin: 0,
@@ -450,13 +438,12 @@ function HeroSvg() {
                   ></path>
                   <path
                     fill="#998c8c"
-                    strokeDasharray="0px, 999999px"
-                    strokeDashoffset="108.2"
                     d="M210.42 330.05H260.45V333.12H210.42z"
                     className="line"
                     data-name="line"
                     data-svg-origin="210.4199981689453 330.04998779296875"
                     opacity="0.39"
+                    transform="matrix(0 0 0 1 210.42 0)"
                     style={{
                       WebkitTransformOrigin: 0,
                       MsTransformOrigin: 0,
@@ -466,15 +453,7 @@ function HeroSvg() {
                 </g>
               </g>
               <g className="webpage" clipPath="url(#clippy)">
-                <g
-                  data-svg-origin="133.8800048828125 243.41000366210938"
-                  style={{
-                    WebkitTransformOrigin: 0,
-                    MsTransformOrigin: 0,
-                    transformOrigin: 0,
-                  }}
-                  transform="translate(0 -145.278)"
-                >
+                <g>
                   <rect
                     width="52.47"
                     height="242.13"
@@ -781,14 +760,7 @@ function HeroSvg() {
               x="183.24"
               y="249.77"
               fill="#ddd"
-              data-svg-origin="183.24000549316406 249.77000427246094"
               rx="1.02"
-              style={{
-                WebkitTransformOrigin: 0,
-                MsTransformOrigin: 0,
-                transformOrigin: 0,
-              }}
-              transform="translate(0 57.746)"
             ></rect>
           </g>
         </g>
