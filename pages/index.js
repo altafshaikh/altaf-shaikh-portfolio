@@ -1,4 +1,6 @@
 import axios from "axios";
+import React, { useContext } from "react";
+import { themeContext } from "./_app";
 
 // components
 import Layout from "../components/Layout";
@@ -11,15 +13,17 @@ import { homeData } from "../constants/jsonEndpoint";
 import styles from "../styles/Home.module.css";
 
 export default function Home(props) {
+  const { toggleDarkMode, theme } = useContext(themeContext);
+
+  const darkGradient =
+    "linear-gradient(to left, rgb(119,64,105) 0%, rgb(119,64,105) 73%, transparent 0%, transparent 0%)";
+  const lightGradient =
+    "linear-gradient(to left, rgb(111,220,191) 0%, rgb(111,220,191) 73%, white 0%, white 0%)";
   const headerBackground = {
-    background:
-      "linear-gradient(to left, rgb(111,220,191) 0%, rgb(111,220,191) 73%, white 55%, white 100%)",
+    background: theme.mode === "light" ? lightGradient : darkGradient,
     width: "100%",
   };
 
-  const toggleDarkMode = (event) => {
-    console.log("click event", event);
-  };
   return (
     <div>
       <Layout
@@ -30,14 +34,8 @@ export default function Home(props) {
         }}
       >
         <header style={headerBackground}>
-          <Navbar
-            logo={props.userData.companyLogowhite}
-            toggleDarkMode={toggleDarkMode}
-          />
-          <Banner
-            heroContent={props.userData.heroContent}
-            toggleDarkMode={toggleDarkMode}
-          />
+          <Navbar logo={props.userData.companyLogowhite} />
+          <Banner heroContent={props.userData.heroContent} />
         </header>
       </Layout>
     </div>
