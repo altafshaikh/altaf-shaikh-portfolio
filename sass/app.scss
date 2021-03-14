@@ -21,6 +21,34 @@ a {
   -webkit-text-stroke-color: var(--color-dark);
 }
 
+.light-effect {
+  animation: flicker 0.8s 0.2s forwards;
+}
+
+@keyframes flicker {
+  20% {
+    opacity: 0.1;
+  }
+  23% {
+    opacity: 0;
+  }
+  26% {
+    opacity: 0.15;
+  }
+  30% {
+    opacity: 0;
+  }
+  35% {
+    opacity: 0.2;
+  }
+  38% {
+    opacity: 0.1;
+  }
+  100% {
+    opacity: 0.4;
+  }
+}
+
 @media (max-width: 770px) {
   .row {
     margin-right: 0px !important;

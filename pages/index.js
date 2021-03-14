@@ -16,6 +16,10 @@ export default function Home(props) {
       "linear-gradient(to left, rgb(111,220,191) 0%, rgb(111,220,191) 73%, white 55%, white 100%)",
     width: "100%",
   };
+
+  const toggleDarkMode = (event) => {
+    console.log("click event", event);
+  };
   return (
     <div>
       <Layout
@@ -26,8 +30,14 @@ export default function Home(props) {
         }}
       >
         <header style={headerBackground}>
-          <Navbar logo={props.userData.companyLogowhite} />
-          <Banner heroContent={props.userData.heroContent} />
+          <Navbar
+            logo={props.userData.companyLogowhite}
+            toggleDarkMode={toggleDarkMode}
+          />
+          <Banner
+            heroContent={props.userData.heroContent}
+            toggleDarkMode={toggleDarkMode}
+          />
         </header>
       </Layout>
     </div>

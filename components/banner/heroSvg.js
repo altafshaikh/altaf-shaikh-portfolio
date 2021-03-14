@@ -1,6 +1,9 @@
-import React from "react";
+import React, { useContext } from "react";
+import { themeContext } from "../../pages/_app";
 
 function HeroSvg() {
+  const { toggleDarkMode, theme } = useContext(themeContext);
+
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -144,8 +147,9 @@ function HeroSvg() {
             ></rect>
           </g>
           <path fill="#404040" d="M10.16 266.81H109.99V271.04H10.16z"></path>
-          <g>
+          <g id="light" onClick={toggleDarkMode}>
             <path
+              id="bulb"
               fill="#fff9cc"
               d="M181.07 121.86c0 7.11-5.26 12.88-11.75 12.88s-11.74-5.77-11.74-12.88S162.84 109 169.32 109s11.75 5.74 11.75 12.86z"
             ></path>
@@ -153,8 +157,8 @@ function HeroSvg() {
               fill="#fff4c5"
               style={{ mixBlendMode: "luminosity" }}
               d="M142.97 121.86L48.99 380.3 297.78 380.3 195.57 121.86 142.97 121.86z"
-              className="beam"
-              opacity="0.45"
+              className={["beam", theme.beamAnimate].join(" ")}
+              opacity={theme.beamOpacity}
             ></path>
             <path
               fill="#af91db"
