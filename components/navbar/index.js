@@ -18,18 +18,21 @@ export default function topNavbar({ logo }) {
           </h1>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-        <Navbar.Collapse id="responsive-navbar-nav" className="text-center">
+        <Navbar.Collapse
+          id="responsive-navbar-nav"
+          className="text-center mr-5"
+        >
           <Nav className="ml-auto mr-5 pr-5">
-            {/* <Link href="/">
+            <Link href="/">
               <a className={["nav-link", navStyles["nav-links"]].join(" ")}>
                 Home
               </a>
-            </Link> */}
+            </Link>
             <Nav.Link href="#Product" className={navStyles["nav-links"]}>
-              Writing
+              Blogs
             </Nav.Link>
             <Nav.Link href="#Education" className={navStyles["nav-links"]}>
-              Speaking
+              Talks
             </Nav.Link>
             <Nav.Link href="#Partners" className={navStyles["nav-links"]}>
               Workshop
