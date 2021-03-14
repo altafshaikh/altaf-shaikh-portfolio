@@ -20,11 +20,11 @@ export default function topNavbar({ logo }) {
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav" className="text-center">
           <Nav className="ml-auto mr-5 pr-5">
-            <Link href="/">
+            {/* <Link href="/">
               <a className={["nav-link", navStyles["nav-links"]].join(" ")}>
                 Home
               </a>
-            </Link>
+            </Link> */}
             <Nav.Link href="#Product" className={navStyles["nav-links"]}>
               Writing
             </Nav.Link>

@@ -51,7 +51,7 @@ export default function Banner({ heroContent }) {
                 href="#speaking"
                 className={[bannerStyles["outline"]].join(" ")}
               >
-                talking{" "}
+                talks{" "}
               </a>
               &{" "}
               <a
