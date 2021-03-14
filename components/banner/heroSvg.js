@@ -457,7 +457,7 @@ function HeroSvg() {
                 </g>
               </g>
               <g className="webpage" clipPath="url(#clippy)">
-                <g>
+                <g id="website">
                   <rect
                     width="52.47"
                     height="242.13"
