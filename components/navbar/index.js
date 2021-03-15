@@ -3,13 +3,26 @@ import navStyles from "./index.module.scss";
 import Link from "next/link";
 import Image from "next/image";
 
+import React, { useContext } from "react";
+import { themeContext } from "../../pages/_app";
+
 export default function topNavbar({ logo }) {
+  const { toggleDarkMode, theme } = useContext(themeContext);
+
+  const navTheme =
+    theme.mode === "light"
+      ? navStyles["nav-links"]
+      : navStyles["nav-links-dark"];
+  const nameColor =
+    theme.mode === "light" ? navStyles["name"] : navStyles["name-dark"];
+  const surnameColor =
+    theme.mode === "light" ? navStyles["surname"] : navStyles["surname-dark"];
   return (
     <>
       <Navbar collapseOnSelect expand="md" variant="light" className="pt-3">
         <Navbar.Brand href="#altaf">
-          <h1 className={navStyles["name"]}>
-            Altaf<span className={navStyles["surname"]}>.Shaikh</span>
+          <h1 className={nameColor}>
+            Altaf<span className={surnameColor}>.Shaikh</span>
           </h1>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
@@ -21,23 +34,21 @@ export default function topNavbar({ logo }) {
             className={["ml-auto", navStyles["nav-item-container"]].join(" ")}
           >
             <Link href="/">
-              <a className={["nav-link", navStyles["nav-links"]].join(" ")}>
-                Home
-              </a>
+              <a className={["nav-link", `${navTheme}`].join(" ")}>Home</a>
             </Link>
-            <Nav.Link href="#Product" className={navStyles["nav-links"]}>
+            <Nav.Link href="#Product" className={`${navTheme}`}>
               Blogs
             </Nav.Link>
-            <Nav.Link href="#Education" className={navStyles["nav-links"]}>
+            <Nav.Link href="#Education" className={`${navTheme}`}>
               Talks
             </Nav.Link>
-            <Nav.Link href="#Partners" className={navStyles["nav-links"]}>
+            <Nav.Link href="#Partners" className={`${navTheme}`}>
               Workshop
             </Nav.Link>
-            <Nav.Link href="#Company" className={navStyles["nav-links"]}>
+            <Nav.Link href="#Company" className={`${navTheme}`}>
               Tutorials
             </Nav.Link>
-            <Nav.Link href="#Pricing" className={navStyles["nav-links"]}>
+            <Nav.Link href="#Pricing" className={`${navTheme}`}>
               About
             </Nav.Link>
           </Nav>

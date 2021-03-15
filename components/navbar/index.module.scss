@@ -9,12 +9,31 @@
     border-bottom: 2px solid rgb(0, 0, 0);
   }
 }
+
+.nav-links-dark {
+  color: rgb(255, 255, 255) !important;
+  border-bottom: 2px solid transparent;
+  &:hover {
+    border-bottom: 2px solid rgb(255, 255, 255);
+  }
+}
+
 .name {
   font-size: 3vw;
   margin-left: 25px;
 }
+
+.name-dark {
+  font-size: 3vw;
+  margin-left: 25px;
+  color: white;
+}
+
 .surname {
   color: #eb9288d5;
+}
+.surname-dark {
+  color: #16dd5fd5;
 }
 
 // Extra small devices (portrait phones, less than 576px)
