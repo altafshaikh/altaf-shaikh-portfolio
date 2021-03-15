@@ -11,14 +11,14 @@ import Typing from "../Typing";
 export default function Banner({ heroContent }) {
   return (
     <div className="" style={{ height: "90vh" }}>
-      <Row>
+      <Row style={{ height: "90vh" }}>
         <Col md={6}>
           <div className={bannerStyles["wrapper"]}>
             <HeroSvg />
           </div>
         </Col>
-        <Col md={6}>
-          <div className="pt-5 w-72">
+        <Col md={6} className="d-flex align-items-center">
+          <div className={[bannerStyles["hero-container"], "pt-5"].join(" ")}>
             <p
               className={[
                 bannerStyles["Hero__eyebrow"],
@@ -40,7 +40,6 @@ export default function Banner({ heroContent }) {
             </h1>
             <p
               className={[
-                "w-75",
                 bannerStyles["Hero__heading"],
                 bannerStyles["h1"],
                 moskFont["mosk-font"],

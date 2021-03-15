@@ -6,13 +6,8 @@ import Image from "next/image";
 export default function topNavbar({ logo }) {
   return (
     <>
-      <Navbar
-        collapseOnSelect
-        expand="lg"
-        variant="light"
-        className="mx-5 pt-3"
-      >
-        <Navbar.Brand href="#contentstack">
+      <Navbar collapseOnSelect expand="lg" variant="light" className="pt-3">
+        <Navbar.Brand href="#altaf">
           <h1 className={navStyles["name"]}>
             Altaf<span className={navStyles["surname"]}>.Shaikh</span>
           </h1>

@@ -6,9 +6,27 @@
   }
 }
 .name {
-  // font-family: Jenthill, sans-serif;
+  font-size: 3vw;
 }
 .surname {
-  // font-family: Jenthill, sans-serif;
   color: #eb9288d5;
+}
+
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) {
+}
+
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 767.98px) {
+}
+
+// Medium devices (tablets, less than 992px)
+@media (max-width: 991.98px) {
+  .name {
+    // font-size: 4vw;
+  }
+}
+
+// Large devices (desktops, less than 1200px)
+@media (max-width: 1199.98px) {
 }
