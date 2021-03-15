@@ -25,7 +25,6 @@ export default function topNavbar({ logo }) {
             Altaf<span className={surnameColor}>.Shaikh</span>
           </h1>
         </Navbar.Brand>
-        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse
           id="responsive-navbar-nav"
           className="text-center mr-5"
