@@ -1,5 +1,7 @@
 import { createContext } from "react";
 import "../sass/app.scss";
+import "../fontawesome/fontawesome";
+
 // import { toggleDarkMode } from/ "../components/darkMode";
 
 import { useState } from "react";
