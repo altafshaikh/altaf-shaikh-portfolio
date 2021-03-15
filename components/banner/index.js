@@ -17,7 +17,7 @@ export default function Banner({ heroContent }) {
             <HeroSvg />
           </div>
         </Col>
-        <Col md={6} className="d-flex align-items-center">
+        <Col md={6} className="hero">
           <div className={[bannerStyles["hero-container"], "pt-5"].join(" ")}>
             <p
               className={[
