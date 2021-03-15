@@ -37,7 +37,8 @@
   font-size: 55px;
   line-height: 1.2;
 }
-
+.lamp-light {
+}
 .wrapper {
   margin-top: -18vh;
   padding: 0 0 0 10%;
@@ -49,8 +50,12 @@
 
 // Small devices (landscape phones, less than 768px)
 @media (max-width: 767.98px) {
-  .wrapper {
+  .lamp-light {
     display: none;
+  }
+  .hero-container {
+    margin-top: 8% !important;
+    width: 75% !important;
   }
 }
 

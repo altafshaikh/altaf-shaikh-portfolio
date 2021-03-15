@@ -12,7 +12,7 @@ export default function Banner({ heroContent }) {
   return (
     <div className="" style={{ height: "90vh" }}>
       <Row style={{ height: "90vh" }}>
-        <Col md={6}>
+        <Col md={6} className={bannerStyles["lamp-light"]}>
           <div className={bannerStyles["wrapper"]}>
             <HeroSvg />
           </div>
