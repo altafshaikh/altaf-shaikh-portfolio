@@ -1,3 +1,16 @@
 .bottom-nav {
   display: none;
+  background-color: #29272a;
+  overflow: hidden;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  justify-content: center !important;
+  border-top: 2px solid white;
+}
+
+@media (max-width: 767.98px) {
+  .bottom-nav {
+    display: flex;
+  }
 }

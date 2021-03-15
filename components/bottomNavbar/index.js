@@ -9,22 +9,16 @@ export default function BottomNavbar() {
     <>
       <Navbar variant="dark" className={bottomNavStyles["bottom-nav"]}>
         <Nav className="">
-          <Link href="/">
-            <a className={["nav-link", `${navTheme}`].join(" ")}>Home</a>
+          <Link href="#blog">
+            <a className={["nav-link", `${navTheme}`].join(" ")}>Blogs</a>
           </Link>
-          <Nav.Link href="#Product" className={`${navTheme}`}>
-            Blogs
-          </Nav.Link>
-          <Nav.Link href="#Education" className={`${navTheme}`}>
+          <Nav.Link href="#talks" className={`${navTheme}`}>
             Talks
           </Nav.Link>
-          <Nav.Link href="#Partners" className={`${navTheme}`}>
-            Workshop
-          </Nav.Link>
-          <Nav.Link href="#Company" className={`${navTheme}`}>
+          <Nav.Link href="#tutorials" className={`${navTheme}`}>
             Tutorials
           </Nav.Link>
-          <Nav.Link href="#Pricing" className={`${navTheme}`}>
+          <Nav.Link href="#about" className={`${navTheme}`}>
             About
           </Nav.Link>
         </Nav>
