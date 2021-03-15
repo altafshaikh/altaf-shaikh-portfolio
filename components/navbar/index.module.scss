@@ -42,6 +42,12 @@
 
 // Small devices (landscape phones, less than 768px)
 @media (max-width: 767.98px) {
+  .name,
+  .name-dark {
+    font-size: 8vw;
+    margin-left: 0 !important;
+    padding: 0;
+  }
 }
 
 // Medium devices (tablets, less than 992px)
