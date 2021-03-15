@@ -5,6 +5,7 @@ import Image from "next/image";
 
 import React, { useContext } from "react";
 import { themeContext } from "../../pages/_app";
+import BottomNavbar from "../bottomNavbar";
 
 export default function topNavbar({ logo }) {
   const { toggleDarkMode, theme } = useContext(themeContext);
@@ -53,6 +54,7 @@ export default function topNavbar({ logo }) {
           </Nav>
         </Navbar.Collapse>
       </Navbar>
+      <BottomNavbar />
     </>
   );
 }
