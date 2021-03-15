@@ -17,7 +17,7 @@ export default function Banner({ heroContent }) {
             <HeroSvg />
           </div>
         </Col>
-        <Col md={6} className="hero">
+        <Col md={6} className={bannerStyles["hero"]}>
           <div className={[bannerStyles["hero-container"], "pt-5"].join(" ")}>
             <p
               className={[
