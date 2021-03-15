@@ -6,7 +6,7 @@ import Image from "next/image";
 export default function topNavbar({ logo }) {
   return (
     <>
-      <Navbar collapseOnSelect expand="lg" variant="light" className="pt-3">
+      <Navbar collapseOnSelect expand="md" variant="light" className="pt-3">
         <Navbar.Brand href="#altaf">
           <h1 className={navStyles["name"]}>
             Altaf<span className={navStyles["surname"]}>.Shaikh</span>
@@ -17,7 +17,9 @@ export default function topNavbar({ logo }) {
           id="responsive-navbar-nav"
           className="text-center mr-5"
         >
-          <Nav className="ml-auto mr-5 pr-5">
+          <Nav
+            className={["ml-auto", navStyles["nav-item-container"]].join(" ")}
+          >
             <Link href="/">
               <a className={["nav-link", navStyles["nav-links"]].join(" ")}>
                 Home

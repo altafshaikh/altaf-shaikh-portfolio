@@ -1,8 +1,12 @@
+.nav-item-container {
+  padding-right: 68px;
+  margin-right: 90px;
+}
 .nav-links {
-  color: rgb(0, 0, 0);
-  border-bottom: 1px solid transparent;
+  color: rgb(0, 0, 0) !important;
+  border-bottom: 2px solid transparent;
   &:hover {
-    border-bottom: 1px solid rgb(0, 0, 0);
+    border-bottom: 2px solid rgb(0, 0, 0);
   }
 }
 .name {
@@ -30,4 +34,8 @@
 
 // Large devices (desktops, less than 1200px)
 @media (max-width: 1199.98px) {
+  .nav-item-container {
+    padding-right: 0;
+    margin-right: 0;
+  }
 }
