@@ -15,7 +15,12 @@ export default function ThemeToggler() {
         className={togglerStyles["switch"]}
         onChange={toggleDarkMode}
       >
-        <input type="checkbox" id="slider" checked={check} />
+        <input
+          type="checkbox"
+          id="slider"
+          checked={check}
+          onChange={toggleDarkMode}
+        />
         <span
           className={[togglerStyles["slider"], togglerStyles["round"]].join(
             " "

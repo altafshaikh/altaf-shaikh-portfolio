@@ -22,10 +22,10 @@ export default function topNavbar({ logo }) {
   return (
     <>
       <Navbar collapseOnSelect expand="md" variant="light" className="pt-3">
-        <Navbar.Brand href="#altaf">
-          <h1 className={nameColor}>
+        <Navbar.Brand href="/">
+          <p className={nameColor}>
             Altaf<span className={surnameColor}>.Shaikh</span>
-          </h1>
+          </p>
         </Navbar.Brand>
         <Navbar.Collapse
           id="responsive-navbar-nav"
