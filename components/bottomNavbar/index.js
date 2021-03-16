@@ -12,7 +12,7 @@ export default function BottomNavbar() {
         <Nav className="">
           <Nav.Link href="#talks" className={`${navTheme}`}>
             <i
-              class="fa fa-pencil fa-lg"
+              className="fa fa-pencil fa-lg"
               aria-hidden="true"
               style={{
                 display: "block",
@@ -26,7 +26,7 @@ export default function BottomNavbar() {
           </Nav.Link>
           <Nav.Link href="#talks" className={`${navTheme}`}>
             <i
-              class="fa fa-microphone fa-lg"
+              className="fa fa-microphone fa-lg"
               aria-hidden="true"
               style={{
                 display: "block",
@@ -40,7 +40,7 @@ export default function BottomNavbar() {
           </Nav.Link>
           <Nav.Link href="#tutorials" className={`${navTheme}`}>
             <i
-              class="fa fa-book fa-lg"
+              className="fa fa-book fa-lg"
               aria-hidden="true"
               style={{
                 display: "block",
@@ -54,7 +54,7 @@ export default function BottomNavbar() {
           </Nav.Link>
           <Nav.Link href="#about" className={`${navTheme}`}>
             <i
-              class="fa fa-info fa-lg"
+              className="fa fa-info fa-lg"
               aria-hidden="true"
               style={{
                 display: "block",

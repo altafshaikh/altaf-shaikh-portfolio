@@ -6,6 +6,7 @@ import Image from "next/image";
 import React, { useContext } from "react";
 import { themeContext } from "../../pages/_app";
 import BottomNavbar from "../bottomNavbar";
+import ThemeToggler from "../themeToggler/index";
 
 export default function topNavbar({ logo }) {
   const { toggleDarkMode, theme } = useContext(themeContext);
@@ -51,6 +52,7 @@ export default function topNavbar({ logo }) {
             <Nav.Link href="#about" className={`${navTheme}`}>
               About
             </Nav.Link>
+            <ThemeToggler />
           </Nav>
         </Navbar.Collapse>
       </Navbar>
