@@ -34,7 +34,6 @@ a {
   animation: flicker 0.8s 0.2s forwards;
 }
 
-
 @keyframes flicker {
   20% {
     opacity: 0.1;
@@ -61,7 +60,7 @@ a {
 
 @media (max-width: 767.98px) {
   .navbar {
-    justify-content: center !important;
+    justify-content: space-around !important;
   }
   header {
     background: #29272a !important;
