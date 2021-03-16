@@ -52,9 +52,9 @@ export default function topNavbar({ logo }) {
             <Nav.Link href="#about" className={`${navTheme}`}>
               About
             </Nav.Link>
-            <ThemeToggler />
           </Nav>
         </Navbar.Collapse>
+        <ThemeToggler />
       </Navbar>
       <BottomNavbar />
     </>
