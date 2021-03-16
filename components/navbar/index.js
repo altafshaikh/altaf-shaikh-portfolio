@@ -36,19 +36,19 @@ export default function topNavbar({ logo }) {
             <Link href="/">
               <a className={["nav-link", `${navTheme}`].join(" ")}>Home</a>
             </Link>
-            <Nav.Link href="#Product" className={`${navTheme}`}>
+            <Nav.Link href="#blogs" className={`${navTheme}`}>
               Blogs
             </Nav.Link>
-            <Nav.Link href="#Education" className={`${navTheme}`}>
+            <Nav.Link href="#talks" className={`${navTheme}`}>
               Talks
             </Nav.Link>
-            <Nav.Link href="#Partners" className={`${navTheme}`}>
+            <Nav.Link href="#workshop" className={`${navTheme}`}>
               Workshop
             </Nav.Link>
-            <Nav.Link href="#Company" className={`${navTheme}`}>
+            <Nav.Link href="#tutorials" className={`${navTheme}`}>
               Tutorials
             </Nav.Link>
-            <Nav.Link href="#Pricing" className={`${navTheme}`}>
+            <Nav.Link href="#about" className={`${navTheme}`}>
               About
             </Nav.Link>
           </Nav>
