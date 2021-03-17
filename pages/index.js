@@ -11,6 +11,7 @@ import Banner from "../components/banner";
 import { homeData } from "../constants/jsonEndpoint";
 
 import styles from "../styles/Home.module.css";
+import BlogSection from "../components/blogs/index";
 
 export default function Home(props) {
   const { toggleDarkMode, theme } = useContext(themeContext);
@@ -36,6 +37,7 @@ export default function Home(props) {
         <header style={headerBackground}>
           <Navbar logo={props.userData.companyLogowhite} />
           <Banner heroContent={props.userData.heroContent} />
+          <BlogSection />
         </header>
       </Layout>
     </div>

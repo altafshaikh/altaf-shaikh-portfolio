@@ -1,0 +1,9 @@
+.Posts-intro {
+  background-color: #ae8fdb;
+  min-height: 100vh;
+}
+
+.pad-around-xlg {
+  padding-top: calc(7.5rem + (10 - 7.5) * ((100vw - 20rem) / (100 - 20)));
+  padding-bottom: calc(7.5rem + (10 - 7.5) * ((100vw - 20rem) / (100 - 20)));
+}
