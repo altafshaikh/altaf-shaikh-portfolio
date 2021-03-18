@@ -182,7 +182,7 @@ export default class BlogSection extends React.Component {
           >
             <div className="row justify-content-end">
               <div className="col-md-7">
-                <h1>Blogs.</h1>
+                <h1 className={blogStyles["h1"]}>Blogs.</h1>
               </div>
               <Draggable
                 bounds={{ top: -150, left: -750, right: 150, bottom: 600 }}
@@ -190,9 +190,10 @@ export default class BlogSection extends React.Component {
               >
                 <div className="col-md-5">
                   <Card
-                    style={{ width: "26rem" }}
+                    style={{ width: "28rem" }}
                     className={[blogStyles["card-browser"], ""].join(" ")}
                   >
+                    <hr className={blogStyles["hr-line"]} />
                     <Card.Body>
                       <Card.Title>Card Title</Card.Title>
                       <Card.Subtitle className="mb-2 text-muted">

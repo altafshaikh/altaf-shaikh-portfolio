@@ -34,6 +34,10 @@ a {
   animation: flicker 0.8s 0.2s forwards;
 }
 
+.card-body {
+  padding: 0 1.25rem 1.25rem 1.25rem;
+}
+
 @keyframes flicker {
   20% {
     opacity: 0.1;
