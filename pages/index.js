@@ -8,7 +8,7 @@ import Navbar from "../components/navbar";
 import Banner from "../components/banner";
 
 // constants
-import { homeData } from "../constants/jsonEndpoint";
+import { blogData, homeData } from "../constants/jsonEndpoint";
 
 import styles from "../styles/Home.module.css";
 import BlogSection from "../components/blogs/index";
@@ -37,17 +37,22 @@ export default function Home(props) {
         <header style={headerBackground}>
           <Navbar logo={props.userData.companyLogowhite} />
           <Banner heroContent={props.userData.heroContent} />
-          <BlogSection />
+          <BlogSection blogData={props.blogData.blogUrls} />
         </header>
       </Layout>
     </div>
   );
 }
 
+const getData = async (url) => {
+  const { data } = await axios(url);
+  return data;
+};
 export const getStaticProps = async (context) => {
-  let { data } = await axios(homeData);
+  let userData = await getData(homeData);
+  let blogdata = await getData(blogData);
 
   return {
-    props: { userData: { ...data[0] } },
+    props: { userData: { ...userData[0] }, blogData: { ...blogdata[0] } },
   };
 };
