@@ -195,16 +195,15 @@ export default class BlogSection extends React.Component {
                   >
                     <hr className={blogStyles["hr-line"]} />
                     <Card.Body>
-                      <Card.Title>Card Title</Card.Title>
-                      <Card.Subtitle className="mb-2 text-muted">
-                        Card Subtitle
-                      </Card.Subtitle>
-                      <Card.Text>
+                      <Card.Title className="my-3">Card Title</Card.Title>
+                      <Card.Text className="text-muted">
                         Some quick example text to build on the card title and
                         make up the bulk of the card's content.
                       </Card.Text>
                       <Card.Link href="#">Card Link</Card.Link>
-                      <Card.Link href="#">Another Link</Card.Link>
+                      <Card.Link className="float-right" href="#">
+                        Another Link
+                      </Card.Link>
                     </Card.Body>
                   </Card>
                 </div>
@@ -215,40 +214,46 @@ export default class BlogSection extends React.Component {
                 bounds={{ top: -300, left: -190, right: 700, bottom: 300 }}
                 {...dragHandlers}
               >
-                <Card style={{ width: "18rem" }}>
+                <Card
+                  style={{ width: "28rem" }}
+                  className={[blogStyles["card-browser"], ""].join(" ")}
+                >
+                  <hr className={blogStyles["hr-line"]} />
                   <Card.Body>
-                    <Card.Title>Card Title</Card.Title>
-                    <Card.Subtitle className="mb-2 text-muted">
-                      Card Subtitle
-                    </Card.Subtitle>
-                    <Card.Text>
+                    <Card.Title className="my-3">Card Title</Card.Title>
+                    <Card.Text className="text-muted">
                       Some quick example text to build on the card title and
                       make up the bulk of the card's content.
                     </Card.Text>
                     <Card.Link href="#">Card Link</Card.Link>
-                    <Card.Link href="#">Another Link</Card.Link>
+                    <Card.Link className="float-right" href="#">
+                      Another Link
+                    </Card.Link>
                   </Card.Body>
                 </Card>
               </Draggable>
             </div>
-            <div className="row flex-row-reverse justify-content-around">
+            <div className="row flex-row-reverse justify-content-around mt-3">
               <Draggable
                 bounds={{ top: -500, left: -550, right: 400, bottom: 100 }}
                 {...dragHandlers}
               >
                 <div className="col-md-7">
-                  <Card style={{ width: "18rem" }}>
+                  <Card
+                    style={{ width: "28rem" }}
+                    className={[blogStyles["card-browser"], ""].join(" ")}
+                  >
+                    <hr className={blogStyles["hr-line"]} />
                     <Card.Body>
-                      <Card.Title>Card Title</Card.Title>
-                      <Card.Subtitle className="mb-2 text-muted">
-                        Card Subtitle
-                      </Card.Subtitle>
-                      <Card.Text>
+                      <Card.Title className="my-3">Card Title</Card.Title>
+                      <Card.Text className="text-muted">
                         Some quick example text to build on the card title and
                         make up the bulk of the card's content.
                       </Card.Text>
                       <Card.Link href="#">Card Link</Card.Link>
-                      <Card.Link href="#">Another Link</Card.Link>
+                      <Card.Link className="float-right" href="#">
+                        Another Link
+                      </Card.Link>
                     </Card.Body>
                   </Card>
                 </div>
