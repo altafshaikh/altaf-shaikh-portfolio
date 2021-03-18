@@ -48,6 +48,7 @@ const getData = async (url) => {
   const { data } = await axios(url);
   return data;
 };
+
 export const getStaticProps = async (context) => {
   let userData = await getData(homeData);
   let blogdata = await getData(blogData);

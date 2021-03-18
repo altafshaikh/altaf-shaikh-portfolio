@@ -87,7 +87,7 @@ export default class BlogSection extends React.Component {
     return (
       <>
         <section
-          id="writing"
+          id="blogs"
           className={[
             blogStyles["Posts-intro"],
             blogStyles["pad-around-xlg"],
