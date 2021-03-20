@@ -13,7 +13,9 @@ export default function BlogCard({ blog }) {
         <hr className={blogStyles["hr-line"]} />
         <Card.Body>
           <Card.Title className="my-3">{blog.title}</Card.Title>
-          <Card.Text className="text-muted">{blog.description}</Card.Text>
+          <Card.Text className="text-muted">
+            {blog.description.substring(0, 165) + "..."}
+          </Card.Text>
           <Card.Link href="#">{blog.source}</Card.Link>
           <Card.Link className="float-right" href={blog.url}>
             Read Post

@@ -116,7 +116,7 @@ export default class BlogSection extends React.Component {
                 bounds={{ top: -300, left: -100, right: 700, bottom: 300 }}
                 {...dragHandlers}
               >
-                <div>
+                <div style={{ marginTop: "-140px" }}>
                   <BlogCard blog={this.props.blogData["1"]} />
                 </div>
               </Draggable>
@@ -126,11 +126,11 @@ export default class BlogSection extends React.Component {
                 bounds={{ top: -500, left: -550, right: 400, bottom: 100 }}
                 {...dragHandlers}
               >
-                <div className="col-md-7">
+                <div className="col-md-6" style={{ marginTop: "-50px" }}>
                   <BlogCard blog={this.props.blogData["2"]} />
                 </div>
               </Draggable>
-              <div className="col-md-5 d-flex align-items-center justify-content-center">
+              <div className="col-md-6 d-flex align-items-center justify-content-center">
                 <Button
                   className={["btn btn-light", blogStyles["blog-btn"]].join(
                     " "
