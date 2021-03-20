@@ -6,12 +6,14 @@ export default function BlogCard({ blog }) {
   console.log(blog);
   return (
     <>
-      <Card
-        className={[blogStyles["card-browser"], ""].join(" ")}
-      >
+      <Card className={[blogStyles["card-browser"], ""].join(" ")}>
         <hr className={blogStyles["hr-line"]} />
         <Card.Body>
-          <Card.Title className="my-3">{blog.title}</Card.Title>
+          <Card.Title
+            className={["my-3", blogStyles["underline"]].join(" ")}
+          >
+            <p className={["", blogStyles["underline__text"]].join(" ")}>{blog.title}</p>
+          </Card.Title>
           <Card.Text className="text-muted">
             {blog.description.substring(0, 165) + "..."}
           </Card.Text>
