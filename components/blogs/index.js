@@ -131,12 +131,8 @@ export default class BlogSection extends React.Component {
                 </div>
               </Draggable>
               <div className="col-md-6 d-flex align-items-center justify-content-center">
-                <Button
-                  className={["btn btn-light", blogStyles["blog-btn"]].join(
-                    " "
-                  )}
-                >
-                  Visit my blogs..
+                <Button className={["btn btn-light", blogStyles["blog-btn"]].join(" ")}>
+                  Visit my blogs...
                 </Button>
               </div>
             </div>
