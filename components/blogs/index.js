@@ -95,11 +95,11 @@ export default class BlogSection extends React.Component {
         >
           <div
             className="container"
-            style={{ paddingLeft: "10%", paddingRight: "10%" }}
+            style={{ paddingLeft: "4%", paddingRight: "4%" }}
           >
             <div className="row justify-content-end">
               <div className="col-md-7">
-                <h1 className={blogStyles["h1"]}>Blogs.</h1>
+                <h1 className={blogStyles["h1"]}>My Blogs.</h1>
               </div>
               <Draggable
                 bounds={{ top: -150, left: -750, right: 150, bottom: 600 }}
@@ -112,10 +112,12 @@ export default class BlogSection extends React.Component {
             </div>
             <div className="row justify-content-start">
               <Draggable
-                bounds={{ top: -300, left: -190, right: 700, bottom: 300 }}
+                bounds={{ top: -300, left: -100, right: 700, bottom: 300 }}
                 {...dragHandlers}
               >
-                <BlogCard blog={this.props.blogData[1]} />
+                <div>
+                  <BlogCard blog={this.props.blogData[1]} />
+                </div>
               </Draggable>
             </div>
             <div className="row flex-row-reverse justify-content-around mt-3">

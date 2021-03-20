@@ -11,7 +11,11 @@ import Banner from "../components/banner";
 import { blogData, homeData } from "../constants/jsonEndpoint";
 
 import styles from "../styles/Home.module.css";
-import BlogSection from "../components/blogs/index";
+// import BlogSection from "../components/blogs/index";
+
+import dynamic from "next/dynamic";
+
+const BlogSection = dynamic(() => import("../components/blogs/index"));
 
 export default function Home(props) {
   const { toggleDarkMode, theme } = useContext(themeContext);
