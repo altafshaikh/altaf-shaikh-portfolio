@@ -2,17 +2,16 @@ import Link from "next/link";
 import blogStyles from "../index.module.scss";
 import { Button, Card } from "react-bootstrap";
 
-export default function BlogCard({ blog }) {
-  console.log(blog);
+export default function BlogCard({ blog, cardBrowser,hrLine }) {
   return (
     <>
-      <Card className={[blogStyles["card-browser"], ""].join(" ")}>
-        <hr className={blogStyles["hr-line"]} />
+      <Card className={[cardBrowser, ""].join(" ")}>
+        <hr className={hrLine} />
         <Card.Body>
-          <Card.Title
-            className={["my-3", blogStyles["underline"]].join(" ")}
-          >
-            <p className={["", blogStyles["underline__text"]].join(" ")}>{blog.title}</p>
+          <Card.Title className={["my-3", blogStyles["underline"]].join(" ")}>
+            <span className={[blogStyles["h5"], blogStyles["underline__text"]].join(" ")}>
+              {blog.title}
+            </span>
           </Card.Title>
           <Card.Text className="">
             {blog.description.substring(0, 165) + "..."}

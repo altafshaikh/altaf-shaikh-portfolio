@@ -42,7 +42,7 @@ export default function Home(props) {
         <header style={headerBackground}>
           <Navbar logo={props.userData.companyLogowhite} />
           <Banner heroContent={props.userData.heroContent} />
-          <BlogSection blogData={props.blogData} />
+          <BlogSection blogData={props.blogData} theme={theme} />
         </header>
       </Layout>
     </div>

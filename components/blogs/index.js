@@ -85,14 +85,27 @@ export default class BlogSection extends React.Component {
     const dragHandlers = { onStart: this.onStart, onStop: this.onStop };
     const { deltaPosition, controlledPosition } = this.state;
     // console.log(this.props);
+    const PostsIntro =
+      this.props.theme.mode === "light"
+        ? blogStyles["Posts-intro"]
+        : blogStyles["Posts-intro-dark"];
+    const hrLine =
+    this.props.theme.mode === "light"
+        ? blogStyles["hr-line"]
+        : blogStyles["hr-line-dark"];
+    const blogBtn =
+    this.props.theme.mode === "light"
+        ? blogStyles["blog-btn"]
+        : blogStyles["blog-btn-dark"];
+    const cardBrowser =
+    this.props.theme.mode === "light"
+        ? blogStyles["card-browser"]
+        : blogStyles["card-browser-dark"];
     return (
       <>
         <section
           id="blogs"
-          className={[
-            blogStyles["Posts-intro"],
-            blogStyles["pad-around-xlg"],
-          ].join(" ")}
+          className={[PostsIntro, blogStyles["pad-around-xlg"]].join(" ")}
         >
           <div
             className="container"
@@ -107,7 +120,7 @@ export default class BlogSection extends React.Component {
                 {...dragHandlers}
               >
                 <div className={["col-lg-5", blogStyles["card1"]].join(" ")}>
-                  <BlogCard blog={this.props.blogData["0"]} />
+                  <BlogCard blog={this.props.blogData["0"]} cardBrowser={cardBrowser} hrLine={hrLine} />
                 </div>
               </Draggable>
             </div>
@@ -117,7 +130,7 @@ export default class BlogSection extends React.Component {
                 {...dragHandlers}
               >
                 <div className={blogStyles["card2"]}>
-                  <BlogCard blog={this.props.blogData["1"]} />
+                  <BlogCard blog={this.props.blogData["1"]} cardBrowser={cardBrowser} hrLine={hrLine} />
                 </div>
               </Draggable>
             </div>
@@ -127,12 +140,12 @@ export default class BlogSection extends React.Component {
                 {...dragHandlers}
               >
                 <div className="col-lg-6" className={blogStyles["card3"]}>
-                  <BlogCard blog={this.props.blogData["2"]} />
+                  <BlogCard blog={this.props.blogData["2"]} cardBrowser={cardBrowser} hrLine={hrLine} />
                 </div>
               </Draggable>
               <div className="col-lg-5 d-flex align-items-center justify-content-center">
                 <Button
-                  className={["btn btn-light", blogStyles["blog-btn"]].join(
+                  className={["btn btn-light", blogBtn].join(
                     " "
                   )}
                 >
