@@ -14,7 +14,7 @@ export default function BlogCard({ blog }) {
           >
             <p className={["", blogStyles["underline__text"]].join(" ")}>{blog.title}</p>
           </Card.Title>
-          <Card.Text className="text-muted">
+          <Card.Text className="">
             {blog.description.substring(0, 165) + "..."}
           </Card.Text>
           <Card.Link href="#">{blog.source}</Card.Link>
