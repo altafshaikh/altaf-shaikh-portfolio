@@ -7,7 +7,6 @@ export default function BlogCard({ blog }) {
   return (
     <>
       <Card
-        style={{ width: "28rem" }}
         className={[blogStyles["card-browser"], ""].join(" ")}
       >
         <hr className={blogStyles["hr-line"]} />

@@ -98,40 +98,44 @@ export default class BlogSection extends React.Component {
             className="container"
             style={{ paddingLeft: "4%", paddingRight: "4%" }}
           >
-            <div className="row justify-content-end">
-              <div className="col-md-7">
+            <div className={["row", blogStyles["row1"]].join(" ")}>
+              <div className="col-lg-7">
                 <h1 className={blogStyles["h1"]}>My Blogs.</h1>
               </div>
               <Draggable
                 bounds={{ top: -150, left: -750, right: 150, bottom: 600 }}
                 {...dragHandlers}
               >
-                <div className="col-md-5">
+                <div className={["col-lg-5", blogStyles["card1"]].join(" ")}>
                   <BlogCard blog={this.props.blogData["0"]} />
                 </div>
               </Draggable>
             </div>
-            <div className="row justify-content-start">
+            <div className={["row", blogStyles["row2"]].join(" ")}>
               <Draggable
                 bounds={{ top: -300, left: -100, right: 700, bottom: 300 }}
                 {...dragHandlers}
               >
-                <div style={{ marginTop: "-140px" }}>
+                <div className={blogStyles["card2"]}>
                   <BlogCard blog={this.props.blogData["1"]} />
                 </div>
               </Draggable>
             </div>
-            <div className="row flex-row-reverse justify-content-around mt-3">
+            <div className={["row", blogStyles["row3"]].join(" ")}>
               <Draggable
                 bounds={{ top: -500, left: -550, right: 400, bottom: 100 }}
                 {...dragHandlers}
               >
-                <div className="col-md-6" style={{ marginTop: "-50px" }}>
+                <div className="col-lg-6" className={blogStyles["card3"]}>
                   <BlogCard blog={this.props.blogData["2"]} />
                 </div>
               </Draggable>
-              <div className="col-md-6 d-flex align-items-center justify-content-center">
-                <Button className={["btn btn-light", blogStyles["blog-btn"]].join(" ")}>
+              <div className="col-lg-5 d-flex align-items-center justify-content-center">
+                <Button
+                  className={["btn btn-light", blogStyles["blog-btn"]].join(
+                    " "
+                  )}
+                >
                   Visit my blogs...
                 </Button>
               </div>
