@@ -84,6 +84,7 @@ export default class BlogSection extends React.Component {
   render() {
     const dragHandlers = { onStart: this.onStart, onStop: this.onStop };
     const { deltaPosition, controlledPosition } = this.state;
+    // console.log(this.props);
     return (
       <>
         <section
@@ -106,7 +107,7 @@ export default class BlogSection extends React.Component {
                 {...dragHandlers}
               >
                 <div className="col-md-5">
-                  <BlogCard blog={this.props.blogData[0]} />
+                  <BlogCard blog={this.props.blogData["0"]} />
                 </div>
               </Draggable>
             </div>
@@ -116,7 +117,7 @@ export default class BlogSection extends React.Component {
                 {...dragHandlers}
               >
                 <div>
-                  <BlogCard blog={this.props.blogData[1]} />
+                  <BlogCard blog={this.props.blogData["1"]} />
                 </div>
               </Draggable>
             </div>
@@ -126,7 +127,7 @@ export default class BlogSection extends React.Component {
                 {...dragHandlers}
               >
                 <div className="col-md-7">
-                  <BlogCard blog={this.props.blogData[2]} />
+                  <BlogCard blog={this.props.blogData["2"]} />
                 </div>
               </Draggable>
               <div className="col-md-5 d-flex align-items-center justify-content-center">

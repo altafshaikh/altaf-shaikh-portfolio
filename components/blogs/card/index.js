@@ -3,6 +3,7 @@ import blogStyles from "../index.module.scss";
 import { Button, Card } from "react-bootstrap";
 
 export default function BlogCard({ blog }) {
+  console.log(blog);
   return (
     <>
       <Card
@@ -11,14 +12,11 @@ export default function BlogCard({ blog }) {
       >
         <hr className={blogStyles["hr-line"]} />
         <Card.Body>
-          <Card.Title className="my-3">Card Title</Card.Title>
-          <Card.Text className="text-muted">
-            Some quick example text to build on the card title and make up the
-            bulk of the card's content.
-          </Card.Text>
-          <Card.Link href="#">Card Link</Card.Link>
-          <Card.Link className="float-right" href="#">
-            Another Link
+          <Card.Title className="my-3">{blog.title}</Card.Title>
+          <Card.Text className="text-muted">{blog.description}</Card.Text>
+          <Card.Link href="#">{blog.source}</Card.Link>
+          <Card.Link className="float-right" href={blog.url}>
+            Read Post
           </Card.Link>
         </Card.Body>
       </Card>

@@ -14,6 +14,7 @@ import styles from "../styles/Home.module.css";
 // import BlogSection from "../components/blogs/index";
 
 import dynamic from "next/dynamic";
+const { extract } = require("article-parser");
 
 const BlogSection = dynamic(() => import("../components/blogs/index"));
 
@@ -41,7 +42,7 @@ export default function Home(props) {
         <header style={headerBackground}>
           <Navbar logo={props.userData.companyLogowhite} />
           <Banner heroContent={props.userData.heroContent} />
-          <BlogSection blogData={props.blogData.blogUrls} />
+          <BlogSection blogData={props.blogData} />
         </header>
       </Layout>
     </div>
@@ -53,11 +54,33 @@ const getData = async (url) => {
   return data;
 };
 
+const fetchArticleData = async ({ blogUrls }) => {
+  let articles = [];
+  console.log(blogUrls);
+
+  let len = blogUrls.length;
+
+  try {
+    while (len > 0) {
+      const blog = await extract(blogUrls[len - 1]);
+      articles.push(blog);
+      len--;
+    }
+  } catch (error) {
+    console.log(error);
+  }
+
+  return articles;
+};
+
 export const getStaticProps = async (context) => {
   let userData = await getData(homeData);
   let blogdata = await getData(blogData);
+  let blogs = await fetchArticleData(blogdata[0]);
+
+  // console.log(blogs);
 
   return {
-    props: { userData: { ...userData[0] }, blogData: { ...blogdata[0] } },
+    props: { userData: { ...userData[0] }, blogData: { ...blogs } },
   };
 };
