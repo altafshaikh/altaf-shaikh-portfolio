@@ -10,7 +10,7 @@ export default function BottomNavbar() {
     <>
       <Navbar variant="dark" className={bottomNavStyles["bottom-nav"]}>
         <Nav className="">
-          <Nav.Link href="#talks" className={`${navTheme}`}>
+          <Nav.Link href="#blogs" className={`${navTheme}`}>
             <i
               className="fa fa-pencil fa-lg"
               aria-hidden="true"
