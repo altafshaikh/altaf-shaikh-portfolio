@@ -47,14 +47,14 @@ export default function Banner({ heroContent }) {
             >
               Also I ❤️ to share knowledge by{" "}
               <a
-                href="#speaking"
+                href="https://tinyurl.com/teachmebroYoutube"
                 className={[bannerStyles["outline"]].join(" ")}
               >
                 talks{" "}
               </a>
               &{" "}
               <a
-                href="#writing"
+                href="https://blog.teachmebro.com/"
                 className={[bannerStyles["outline"]].join(" ")}
               >
                 writing{" "}
