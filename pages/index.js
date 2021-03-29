@@ -14,6 +14,7 @@ import styles from "../styles/Home.module.css";
 // import BlogSection from "../components/blogs/index";
 
 import dynamic from "next/dynamic";
+import TalkSection from "../components/talks";
 const { extract } = require("article-parser");
 
 const BlogSection = dynamic(() => import("../components/blogs/index"));
@@ -43,6 +44,7 @@ export default function Home(props) {
           <Navbar logo={props.userData.companyLogowhite} />
           <Banner heroContent={props.userData.heroContent} />
           <BlogSection blogData={props.blogData} theme={theme} />
+          <TalkSection />
         </header>
       </Layout>
     </div>
