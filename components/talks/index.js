@@ -6,20 +6,42 @@ export default function TalkSection() {
       <section
         id="talks"
         className={[
-          blogStyles["talks-intro"],
-          blogStyles["pad-around-xlg"],
+          talkStyles["talks-intro"],
+          talkStyles["pad-around-xlg"],
         ].join(" ")}
       >
         <div
           className="container"
-          style={{ paddingLeft: "10%", paddingRight: "10%" }}
+          style={{ paddingLeft: "4%", paddingRight: "4%" }}
         >
           <div className="row justify-content-end">
             <div className="col-md-7">
-              <h1>Blogs.</h1>
+              <h1 className={talkStyles["h1"]}>My Talks.</h1>
+              <p>
+                The first time I got asked to speak at a conference, my gut
+                reaction was “heck no. That sounds terrifying”.
+              </p>
+
+              <p>
+                So naturally I said yes. Since then I’ve spoken at conferences
+                and meet-ups all over the world. It still terrifies me.
+              </p>
+
+              <p>Check out my videos and upcoming talks.</p>
             </div>
             <div className="col-md-5">
-              <p>card</p>
+              <figure className={[talkStyles["Speaking__image"]].join(" ")}>
+                <img
+                  src="https://github.com/altafshaikh/static-file-storage/raw/master/Portfolio/images/altaf_workshop-min.jpg"
+                  alt="black and white photo of Altaf on stage at SJCEM. Hosting Django Workshop"
+                />
+                <figcaption
+                  className={[talkStyles["small"]].join(" ")}
+                  data-content="Django Workshop"
+                >
+                  Django Workshop
+                </figcaption>
+              </figure>
             </div>
           </div>
         </div>
