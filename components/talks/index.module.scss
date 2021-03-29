@@ -65,8 +65,11 @@
   max-width: 100%;
 }
 
-.night .Speaking figcaption {
-  background-color: var(--color-sherbet);
+.Speaking__image__dark img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  max-width: 100%;
 }
 
 .Speaking__image figcaption {

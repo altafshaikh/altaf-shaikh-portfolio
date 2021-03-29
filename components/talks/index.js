@@ -1,14 +1,26 @@
 import talkStyles from "./index.module.scss";
 
+import React, { useContext } from "react";
+import { themeContext } from "../../pages/_app";
+
 export default function TalkSection() {
+  const { toggleDarkMode, theme } = useContext(themeContext);
+
+  const TalksIntro =
+    theme.mode === "light"
+      ? talkStyles["talks-intro"]
+      : talkStyles["talks-intro-dark"];
+
+  const SpeakerImage =
+    theme.mode === "light"
+      ? talkStyles["Speaking__image"]
+      : talkStyles["Speaking__image__dark"];
+
   return (
     <>
       <section
         id="talks"
-        className={[
-          talkStyles["talks-intro"],
-          talkStyles["pad-around-xlg"],
-        ].join(" ")}
+        className={[TalksIntro, talkStyles["pad-around-xlg"]].join(" ")}
       >
         <div
           className="container"
@@ -32,7 +44,7 @@ export default function TalkSection() {
               </div>
             </div>
             <div className="col-md-5">
-              <figure className={[talkStyles["Speaking__image"]].join(" ")}>
+              <figure className={[SpeakerImage].join(" ")}>
                 <img
                   src="https://github.com/altafshaikh/static-file-storage/raw/master/Portfolio/images/altaf_workshop-min.jpg"
                   alt="black and white photo of Altaf Shaikh on stage at SJCEM. Hosting Django Workshop"
