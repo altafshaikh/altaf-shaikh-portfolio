@@ -16,6 +16,11 @@ export default function TalkSection() {
       ? talkStyles["Speaking__image"]
       : talkStyles["Speaking__image__dark"];
 
+  const CardLink =
+    theme.mode === "light"
+      ? talkStyles["Card__link"]
+      : talkStyles["Card__link__dark"];
+
   return (
     <>
       <section
@@ -58,6 +63,48 @@ export default function TalkSection() {
                   Django Workshop
                 </figcaption>
               </figure>
+            </div>
+          </div>
+          {/* talks lists */}
+          <div className="row mt-5">
+            <div className="col-md-4">
+              <p
+                className={[
+                  talkStyles["Card__type"],
+                  talkStyles["font-cursive"],
+                  talkStyles["h6"],
+                ].join(" ")}
+              >
+                workshop
+              </p>
+            </div>
+            <div className="col-md-8">
+              <a
+                href="/speaking/getting-started-with-svg-animation"
+                className={[
+                  CardLink,
+                  talkStyles["underline"],
+                  talkStyles["sf-flow"],
+                ].join(" ")}
+              >
+                <h2
+                  className={[
+                    talkStyles["underline__text"],
+                    talkStyles["h4"],
+                  ].join(" ")}
+                >
+                  Getting started with SVG animation
+                </h2>
+                <p className="mt-4">
+                  Animation is one of the best ways to bring brand personality
+                  and character to an online experience, but in the busy world
+                  of front-end development, it can often be overlooked.
+                </p>
+                <p>
+                  In this workshop we cover everything you need to know to get
+                  started with, and master SVG animation.
+                </p>
+              </a>
             </div>
           </div>
         </div>

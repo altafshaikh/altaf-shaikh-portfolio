@@ -14,6 +14,7 @@
 }
 .h1 {
   font-size: 65px;
+  font-family: Mosk, sans-serif;
 }
 .h5 {
   font-size: 24px;
@@ -24,6 +25,7 @@
   padding-right: 3rem;
   max-width: 60ch;
   font-size: 18px;
+  font-family: sans-serif;
 }
 
 .talk-link {
@@ -99,7 +101,7 @@
   left: 1.8rem;
   padding: 0.5rem 1.25rem;
   background-color: hsl(0, 0%, 98%);
-  color: hsl(0, 0%, 0%);
+  color: hsl(0, 0%, 25%);
   border: solid 2px hsl(0, 0%, 97%);
   font-family: Mosk, sans-serif;
   -webkit-box-shadow: 0.3rem 0.3rem 0 0 hsl(0, 0%, 98%);
@@ -109,6 +111,128 @@
 .small {
   font-size: 20px;
   line-height: 1;
+}
+
+.Card__type {
+  align-self: flex-start;
+  margin-bottom: 0.5rem;
+  transform: rotate(-5deg);
+  transform-origin: bottom left;
+  padding-left: 0.2rem;
+}
+
+.h6 {
+  font-size: 26px;
+  letter-spacing: 0.02em;
+  line-height: 1.8;
+}
+
+.h2 {
+  font-family: Mosk, sans-serif;
+  letter-spacing: 0.04em;
+}
+
+.Card__link {
+  text-decoration: none !important;
+  color: hsl(0, 0%, 25%);
+  &:hover {
+    color: hsl(0, 0%, 25%);
+  }
+  p {
+    line-height: 2rem;
+    font-family: sans-serif;
+    font-size: 18px;
+  }
+  &:after {
+    content: "";
+    position: absolute;
+    width: 20%;
+    height: 2px;
+    background-color: hsl(0, 0%, 25%);
+    top: 0.75rem;
+    right: calc(100% + 2rem);
+  }
+}
+
+.slide-out {
+  position: sticky;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: -999;
+}
+
+.Card__link__dark {
+  text-decoration: none !important;
+  color: hsl(0, 0%, 98%);
+  &:hover {
+    color: hsl(0, 0%, 98%);
+  }
+  p {
+    line-height: 2rem;
+    font-family: sans-serif;
+    font-size: 18px;
+  }
+  &:after {
+    content: "";
+    position: absolute;
+    width: 20%;
+    height: 2px;
+    background-color: hsl(0, 0%, 98%);
+    top: 0.75rem;
+    right: calc(100% + 2rem);
+  }
+}
+
+.sf-flow {
+  --flow-space: 1em;
+}
+
+.underline__text {
+  line-height: 1;
+  display: inline;
+  background-image: linear-gradient(
+    transparent 50%,
+    hsl(4, 65%, 85%) 50%,
+    hsl(4, 65%, 85%) 85%,
+    transparent 85%,
+    transparent 100%
+  );
+  background-repeat: no-repeat;
+  background-size: 0 100%;
+}
+
+// .underline__text__dark {
+//   line-height: 1;
+//   display: inline;
+//   background-image: linear-gradient(
+//     transparent 50%,
+//     hsl(316, 30%, 36%) 50%,
+//     hsl(316, 30%, 36%) 85%,
+//     transparent 85%,
+//     transparent 100%
+//   );
+//   background-repeat: no-repeat;
+//   background-size: 0 100%;
+// }
+
+.underline:hover .underline__text {
+  transition: 0.5s cubic-bezier(0.645, 0.045, 0.355, 1);
+  background-size: 100% 100%;
+}
+
+// .Card__link__dark:hover .underline__text__dark {
+//   transition: 0.5s cubic-bezier(0.645, 0.045, 0.355, 1);
+//   background-size: 100% 100%;
+// }
+
+.h4 {
+  font-size: 34px;
+  line-height: 1.2;
+}
+
+.font-cursive {
+  font-family: Jenthill, sans-serif;
 }
 
 // Extra small devices (portrait phones, less than 576px)
@@ -123,6 +247,14 @@
   }
   .Speaking__text {
     padding-right: 0rem !important;
+  }
+  .Card__link:after,
+  .Card__link__dark:after {
+    content: none;
+    position: absolute;
+    width: 0%;
+    height: 0px;
+    background-color: transparent;
   }
 }
 
