@@ -18,7 +18,7 @@ export default function TalkSection() {
             <div className="col-md-7">
               <div className={[talkStyles["Speaking__text"]].join(" ")}>
                 <h1 className={talkStyles["h1"]}>My Talks.</h1>
-                <p className="mt-5">
+                <p className="mt-3">
                   My First self-hosted Workshop I conducted in my college
                   campus, with an aim to share my knowledge.
                 </p>
