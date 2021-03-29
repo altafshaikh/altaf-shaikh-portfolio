@@ -40,7 +40,9 @@ export default function TalkSection() {
                   cross domains. It still terrifies me.
                 </p>
 
-                <a href="#">Check out my videos and upcoming talks.</a>
+                <a className={talkStyles["talk-link"]} href="#">
+                  Check out my videos and upcoming talks.
+                </a>
               </div>
             </div>
             <div className="col-md-5">

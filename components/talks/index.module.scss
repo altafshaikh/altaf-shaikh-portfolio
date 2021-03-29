@@ -26,6 +26,13 @@
   font-size: 18px;
 }
 
+.talk-link {
+  text-decoration: underline;
+  &:hover {
+    color: #44c1c1;
+  }
+}
+
 .Speaking__image {
   margin: 3.5rem auto 0;
   position: relative;
@@ -95,9 +102,9 @@
   color: hsl(0, 0%, 0%);
   border: solid 2px hsl(0, 0%, 97%);
   font-family: Mosk, sans-serif;
-  -webkit-box-shadow: 0.3rem 0.3rem 0 0 hsl(0, 0%, 97%);
-  -moz-box-shadow: 0.3rem 0.3rem 0 0 hsl(0, 0%, 97%);
-  box-shadow: 0.3rem 0.3rem 0 0 hsl(0, 0%, 97%);
+  -webkit-box-shadow: 0.3rem 0.3rem 0 0 hsl(0, 0%, 98%);
+  -moz-box-shadow: 0.3rem 0.3rem 0 0 hsl(0, 0%, 98%);
+  box-shadow: 0.3rem 0.3rem 0 0 hsl(0, 0%, 98%);
 }
 .small {
   font-size: 20px;
