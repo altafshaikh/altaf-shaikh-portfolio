@@ -20,6 +20,12 @@
   z-index: 99;
 }
 
+.Speaking__text {
+  padding-right: 3rem;
+  max-width: 60ch;
+  font-size: 20px;
+}
+
 .Speaking__image {
   margin: 3.5rem auto 0;
   position: relative;
@@ -28,9 +34,9 @@
   -webkit-box-shadow: 0.5rem 0.5rem 0 0 hsl(0, 0%, 25%);
   -moz-box-shadow: 0.5rem 0.5rem 0 0 hsl(0, 0%, 25%);
   box-shadow: 0.5rem 0.5rem 0 0 hsl(0, 0%, 25%);
-  width: 93%;
-  height: 285px;
-  max-width: 420px;
+  width: 95%;
+  height: 270px;
+  max-width: 440px;
   transform: translateX(-0.8rem);
   transform: translateY(-2rem);
   filter: saturate(0.7);
@@ -44,9 +50,9 @@
   -webkit-box-shadow: 0.5rem 0.5rem 0 0 hsl(0, 0%, 98%);
   -moz-box-shadow: 0.5rem 0.5rem 0 0 hsl(0, 0%, 98%);
   box-shadow: 0.5rem 0.5rem 0 0 hsl(0, 0%, 98%);
-  width: 93%;
-  height: 285px;
-  max-width: 420px;
+  width: 95%;
+  height: 270px;
+  max-width: 440px;
   transform: translateX(-0.8rem);
   transform: translateY(-2rem);
   filter: saturate(0.7);
@@ -70,7 +76,7 @@
   padding: 0.5rem 1.25rem;
   background-color: hsl(0, 0%, 25%);
   color: hsl(0, 0%, 98%);
-  border: solid 2px hsl(0, 0%, 25%);
+  border: solid 2px hsl(0, 0%, 18%);
   font-family: Mosk, sans-serif;
   -webkit-box-shadow: 0.3rem 0.3rem 0 0 hsl(0, 0%, 25%);
   -moz-box-shadow: 0.3rem 0.3rem 0 0 hsl(0, 0%, 25%);
