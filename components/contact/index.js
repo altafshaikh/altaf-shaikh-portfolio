@@ -43,17 +43,36 @@ export default function ContactMe() {
                   at hello@altafshaikh.ml or give me a shout on social media.
                 </p>
                 <span>
-                  <i
-                    className="fa fa-instagram fa-lg p-2"
-                    aria-hidden="true"
-                  ></i>
-                  <i className="fa fa-youtube fa-lg p-2" aria-hidden="true"></i>
-                  <i className="fa fa-github fa-lg p-2" aria-hidden="true"></i>
-                  <i
-                    className="fa fa-linkedin fa-lg p-2"
-                    aria-hidden="true"
-                  ></i>
-                  <i className="fa fa-twitter fa-lg p-2" aria-hidden="true"></i>
+                  <a href="https://www.instagram.com/ialtafshaikh/">
+                    <i
+                      className="fa fa-instagram fa-lg p-2"
+                      aria-hidden="true"
+                    ></i>
+                  </a>
+                  <a href="https://www.youtube.com/channel/UCTSIdPsYXRRp5ABnuw_-uOA">
+                    <i
+                      className="fa fa-youtube fa-lg p-2"
+                      aria-hidden="true"
+                    ></i>
+                  </a>{" "}
+                  <a href="https://github.com/altafshaikh/">
+                    <i
+                      className="fa fa-github fa-lg p-2"
+                      aria-hidden="true"
+                    ></i>
+                  </a>{" "}
+                  <a href="https://www.linkedin.com/in/ialtafshaikh/">
+                    <i
+                      className="fa fa-linkedin fa-lg p-2"
+                      aria-hidden="true"
+                    ></i>
+                  </a>{" "}
+                  <a href="https://twitter.com/ialtafshaikh">
+                    <i
+                      className="fa fa-twitter fa-lg p-2"
+                      aria-hidden="true"
+                    ></i>
+                  </a>
                 </span>
                 <h2
                   className={[
