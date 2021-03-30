@@ -18,6 +18,17 @@
   //   display: flex;
   //  justify-content:center;
 }
+.link {
+  color: hsl(0, 0%, 25%);
+  z-index: 1;
+  text-decoration: none !important;
+  font-family: Mosk, sans-serif;
+  font-weight: 600;
+  border-bottom: 2px solid rgb(111, 220, 191);
+  &:hover {
+    color: hsl(0, 0%, 25%);
+  }
+}
 .contact-text {
   padding-left: 40px;
 }

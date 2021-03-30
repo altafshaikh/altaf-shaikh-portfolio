@@ -31,12 +31,27 @@ export default function ContactMe() {
                   I’m always up for a chat.
                 </p>
                 <p className={[contactStyles["h5"]].join(" ")}>
-                  Pop me an email at hello@altafshaikh.ml or give me a shout on
-                  social media.
+                  <a
+                    href="hello@altafshaikh.ml"
+                    className={contactStyles["link"]}
+                  >
+                    Pop me an email
+                  </a>{" "}
+                  at hello@altafshaikh.ml or give me a shout on social media.
                 </p>
-                <p className={[""].join(" ")}>
-                  <a href="/">workshop</a>
-                </p>
+                <span>
+                  <i
+                    className="fa fa-instagram fa-lg p-2"
+                    aria-hidden="true"
+                  ></i>
+                  <i className="fa fa-youtube fa-lg p-2" aria-hidden="true"></i>
+                  <i className="fa fa-github fa-lg p-2" aria-hidden="true"></i>
+                  <i
+                    className="fa fa-linkedin fa-lg p-2"
+                    aria-hidden="true"
+                  ></i>
+                  <i className="fa fa-twitter fa-lg p-2" aria-hidden="true"></i>
+                </span>
                 <h2
                   className={[
                     contactStyles["Contact__heading"],
