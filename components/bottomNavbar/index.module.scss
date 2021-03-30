@@ -1,18 +1,34 @@
 .bottom-nav {
   display: none;
-  background-color: #29272a;
+  background-color: #f8f8f8;
+  color: rgb(56, 56, 56) !important;
   overflow: hidden;
   position: fixed;
   bottom: 0;
   width: 100%;
+  height: 60px;
   justify-content: center !important;
-  border-top: 2px solid white;
+  border-top: 2px solid rgb(28, 28, 28);
   z-index: 999;
+}
 
+.bottom-nav-dark {
+  display: none;
+  background-color: #313131;
+  color: rgb(237, 237, 237) !important;
+  overflow: hidden;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+  justify-content: center !important;
+  border-top: 2px solid rgb(240, 240, 240);
+  z-index: 999;
 }
 
 @media (max-width: 767.98px) {
-  .bottom-nav {
+  .bottom-nav,
+  .bottom-nav-dark {
     display: flex;
   }
 }

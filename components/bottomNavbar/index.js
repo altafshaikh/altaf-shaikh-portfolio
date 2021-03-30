@@ -2,17 +2,24 @@ import Link from "next/link";
 import { Navbar } from "react-bootstrap";
 import { Nav } from "react-bootstrap";
 import bottomNavStyles from "./index.module.scss";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { themeContext } from "../../pages/_app";
+import React, { useContext } from "react";
 
 export default function BottomNavbar() {
-  const navTheme = "text-white";
+  const { toggleDarkMode, theme } = useContext(themeContext);
+  const navTheme = "";
+  const bottomNav =
+    theme.mode === "light"
+      ? bottomNavStyles["bottom-nav"]
+      : bottomNavStyles["bottom-nav-dark"];
+
   return (
     <>
-      <Navbar variant="dark" className={bottomNavStyles["bottom-nav"]}>
+      <Navbar variant="" className={bottomNav}>
         <Nav className="">
           <Nav.Link href="#blogs" className={`${navTheme}`}>
             <i
-              className="fa fa-pencil fa-lg"
+              className="fa fa-pencil"
               aria-hidden="true"
               style={{
                 display: "block",
@@ -26,7 +33,7 @@ export default function BottomNavbar() {
           </Nav.Link>
           <Nav.Link href="#talks" className={`${navTheme}`}>
             <i
-              className="fa fa-microphone fa-lg"
+              className="fa fa-microphone"
               aria-hidden="true"
               style={{
                 display: "block",
@@ -40,7 +47,7 @@ export default function BottomNavbar() {
           </Nav.Link>
           <Nav.Link href="#tutorials" className={`${navTheme}`}>
             <i
-              className="fa fa-book fa-lg"
+              className="fa fa-book"
               aria-hidden="true"
               style={{
                 display: "block",
@@ -54,7 +61,7 @@ export default function BottomNavbar() {
           </Nav.Link>
           <Nav.Link href="#about" className={`${navTheme}`}>
             <i
-              className="fa fa-info fa-lg"
+              className="fa fa-info"
               aria-hidden="true"
               style={{
                 display: "block",
