@@ -15,9 +15,16 @@
   padding-left: 2rem;
   padding-right: 2rem;
   color: hsl(0, 0%, 25%);
-  //   display: flex;
-  //  justify-content:center;
 }
+
+.Contact-dark {
+  min-height: 120vh;
+  background-color: rgb(119, 64, 105);
+  padding-left: 2rem;
+  padding-right: 2rem;
+  color: hsl(0, 0%, 98%);
+}
+
 .link {
   color: hsl(0, 0%, 25%);
   z-index: 1;
@@ -27,6 +34,18 @@
   border-bottom: 2px solid rgb(111, 220, 191);
   &:hover {
     color: hsl(0, 0%, 25%);
+  }
+}
+
+.link-dark {
+  color: hsl(0, 0%, 98%);
+  z-index: 1;
+  text-decoration: none !important;
+  font-family: Mosk, sans-serif;
+  font-weight: 600;
+  border-bottom: 2px solid rgb(119, 64, 105);
+  &:hover {
+    color: hsl(0, 0%, 98%);
   }
 }
 .contact-text {
@@ -55,6 +74,11 @@
   max-width: 100% !important;
 }
 
+.contact-inner-dark {
+  background-color: hsl(0, 0%, 25%);
+  max-width: 100% !important;
+}
+
 .contact-inner-bg {
   // background: transparent !important;
 }
@@ -73,7 +97,8 @@
 }
 
 @media (max-width: 575.98px) {
-  .Contact {
+  .Contact,
+  .Contact-dark {
     min-height: 140vh !important;
   }
   .h1 {
@@ -86,7 +111,8 @@
 
 // Small devices (landscape phones, less than 768px)
 @media (max-width: 767.98px) {
-  .Contact {
+  .Contact,
+  .Contact-dark {
     min-height: 140vh;
     padding-left: 0rem;
     padding-right: 0rem;
