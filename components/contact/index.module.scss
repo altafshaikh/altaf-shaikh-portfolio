@@ -1,3 +1,56 @@
+// .slide-out {
+//   position: sticky;
+//   bottom: 0;
+//   left: 0;
+//   width: 100%;
+// }
+
+.contact-outter {
+  background-color: rgb(111, 220, 191);
+}
+
+.Contact {
+  min-height: 120vh;
+  background-color: rgb(111, 220, 191);
+  padding-left: 2rem;
+  padding-right: 2rem;
+  color: hsl(0, 0%, 25%);
+  //   display: flex;
+  //  justify-content:center;
+}
+
+.h1 {
+  font-size: 65px;
+  font-family: Mosk, sans-serif;
+  transform: translateY(225px);
+  position: absolute;
+}
+
+.h5 {
+  font-size: 26px;
+  letter-spacing: 0.02em;
+  line-height: 1.5;
+}
+
+.pad-around-xlg {
+  padding-top: calc(6rem + (6 - 4) * ((100vw - 20rem) / (100 - 20)));
+  padding-bottom: calc(5rem + (6 - 4) * ((100vw - 20rem) / (100 - 20)));
+}
+.contact-inner {
+  background-color: hsl(0, 0%, 98%);
+  max-width: 100% !important;
+}
+
+.contact-inner-bg {
+  // background: transparent !important;
+}
+
+.contact-image {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  max-width: 100%;
+}
 // Extra small devices (portrait phones, less than 576px)
 @media (max-width: 575.98px) {
 }
