@@ -21,7 +21,12 @@ export default function ContactMe() {
             ].join(" ")}
           >
             <div className={["row"].join(" ")}>
-              <div className="col-md-5 pt-5 pl-5">
+              <div
+                className={[
+                  "col-md-5 pt-5",
+                  contactStyles["contact-text"],
+                ].join(" ")}
+              >
                 <p className={[contactStyles["h5"]].join(" ")}>
                   I’m always up for a chat.
                 </p>
