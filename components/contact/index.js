@@ -26,7 +26,7 @@ export default function ContactMe() {
                   I’m always up for a chat.
                 </p>
                 <p className={[contactStyles["h5"]].join(" ")}>
-                  Pop me an email at hi@cassie.codes or give me a shout on
+                  Pop me an email at hello@altafshaikh.ml or give me a shout on
                   social media.
                 </p>
                 <p className={[""].join(" ")}>
