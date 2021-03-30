@@ -18,6 +18,7 @@ import TalkSection from "../components/talks";
 const { extract } = require("article-parser");
 
 const BlogSection = dynamic(() => import("../components/blogs/index"));
+import ContactMe from "../components/contact/index";
 
 export default function Home(props) {
   const { toggleDarkMode, theme } = useContext(themeContext);
@@ -45,6 +46,7 @@ export default function Home(props) {
           <Banner heroContent={props.userData.heroContent} />
           <BlogSection blogData={props.blogData} theme={theme} />
           <TalkSection />
+          <ContactMe />
         </header>
       </Layout>
     </div>
