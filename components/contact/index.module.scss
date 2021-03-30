@@ -89,6 +89,18 @@
   width: 100%;
   max-width: 100%;
 }
+
+.social-link {
+  &:hover {
+    color: rgb(111, 220, 191);
+  }
+}
+
+.social-link-dark {
+  &:hover {
+    color: rgb(119, 64, 105);
+  }
+}
 // Extra small devices (portrait phones, less than 576px)
 @media (max-width: 320.98px) {
   .h1 {

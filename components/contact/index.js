@@ -15,6 +15,10 @@ export default function ContactMe() {
       : contactStyles["contact-inner-dark"];
   const link =
     theme.mode === "light" ? contactStyles["link"] : contactStyles["link-dark"];
+  const socialLink =
+    theme.mode === "light"
+      ? contactStyles["social-link"]
+      : contactStyles["social-link-dark"];
   return (
     <>
       <section className={contactStyles["slide-out"]}>
@@ -43,31 +47,46 @@ export default function ContactMe() {
                   at hello@altafshaikh.ml or give me a shout on social media.
                 </p>
                 <span>
-                  <a href="https://www.instagram.com/ialtafshaikh/">
+                  <a
+                    href="https://www.instagram.com/ialtafshaikh/"
+                    className={socialLink}
+                  >
                     <i
                       className="fa fa-instagram fa-lg p-2"
                       aria-hidden="true"
                     ></i>
                   </a>
-                  <a href="https://www.youtube.com/channel/UCTSIdPsYXRRp5ABnuw_-uOA">
+                  <a
+                    href="https://www.youtube.com/channel/UCTSIdPsYXRRp5ABnuw_-uOA"
+                    className={socialLink}
+                  >
                     <i
                       className="fa fa-youtube fa-lg p-2"
                       aria-hidden="true"
                     ></i>
                   </a>{" "}
-                  <a href="https://github.com/altafshaikh/">
+                  <a
+                    href="https://github.com/altafshaikh/"
+                    className={socialLink}
+                  >
                     <i
                       className="fa fa-github fa-lg p-2"
                       aria-hidden="true"
                     ></i>
                   </a>{" "}
-                  <a href="https://www.linkedin.com/in/ialtafshaikh/">
+                  <a
+                    href="https://www.linkedin.com/in/ialtafshaikh/"
+                    className={socialLink}
+                  >
                     <i
                       className="fa fa-linkedin fa-lg p-2"
                       aria-hidden="true"
                     ></i>
                   </a>{" "}
-                  <a href="https://twitter.com/ialtafshaikh">
+                  <a
+                    href="https://twitter.com/ialtafshaikh"
+                    className={socialLink}
+                  >
                     <i
                       className="fa fa-twitter fa-lg p-2"
                       aria-hidden="true"
