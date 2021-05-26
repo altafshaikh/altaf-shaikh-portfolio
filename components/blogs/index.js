@@ -120,11 +120,16 @@ export default class BlogSection extends React.Component {
                 {...dragHandlers}
               > */}
               <div className={["col-lg-5", blogStyles["card1"]].join(" ")}>
-                <BlogCard
-                  blog={this.props.blogData["0"]}
-                  cardBrowser={cardBrowser}
-                  hrLine={hrLine}
-                />
+                <a
+                  href={this.props.blogData["0"]["url"]}
+                  style={{ textDecoration: "none" }}
+                >
+                  <BlogCard
+                    blog={this.props.blogData["0"]}
+                    cardBrowser={cardBrowser}
+                    hrLine={hrLine}
+                  />
+                </a>
               </div>
               {/* </Draggable> */}
             </div>
@@ -133,13 +138,18 @@ export default class BlogSection extends React.Component {
                 bounds={{ top: -300, left: -100, right: 700, bottom: 300 }}
                 {...dragHandlers}
               > */}
-              <div className={blogStyles["card2"]}>
-                <BlogCard
-                  blog={this.props.blogData["1"]}
-                  cardBrowser={cardBrowser}
-                  hrLine={hrLine}
-                />
-              </div>
+              <a
+                href={this.props.blogData["1"]["url"]}
+                style={{ textDecoration: "none" }}
+              >
+                <div className={blogStyles["card2"]}>
+                  <BlogCard
+                    blog={this.props.blogData["1"]}
+                    cardBrowser={cardBrowser}
+                    hrLine={hrLine}
+                  />
+                </div>
+              </a>
               {/* </Draggable> */}
             </div>
             <div className={["row", blogStyles["row3"]].join(" ")}>
@@ -147,13 +157,18 @@ export default class BlogSection extends React.Component {
                 bounds={{ top: -500, left: -550, right: 400, bottom: 100 }}
                 {...dragHandlers}
               > */}
-              <div className="col-lg-6" className={blogStyles["card3"]}>
-                <BlogCard
-                  blog={this.props.blogData["2"]}
-                  cardBrowser={cardBrowser}
-                  hrLine={hrLine}
-                />
-              </div>
+              <a
+                href={this.props.blogData["2"]["url"]}
+                style={{ textDecoration: "none" }}
+              >
+                <div className="col-lg-6" className={blogStyles["card3"]}>
+                  <BlogCard
+                    blog={this.props.blogData["2"]}
+                    cardBrowser={cardBrowser}
+                    hrLine={hrLine}
+                  />
+                </div>
+              </a>
               {/* </Draggable> */}
               <div className="col-lg-5 d-flex align-items-center justify-content-center">
                 <a

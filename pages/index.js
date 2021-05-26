@@ -60,7 +60,7 @@ const getData = async (url) => {
 
 const fetchArticleData = async ({ blogUrls }) => {
   let articles = [];
-  console.log(blogUrls);
+  // console.log(blogUrls);
 
   let len = blogUrls.length;
 
