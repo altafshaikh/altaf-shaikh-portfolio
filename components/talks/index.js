@@ -80,7 +80,7 @@ export default function TalkSection() {
             </div>
             <div className="col-md-8">
               <a
-                href="/speaking/getting-started-with-svg-animation"
+                href="https://www.youtube.com/watch?v=hsGOl_28R10"
                 className={[
                   CardLink,
                   talkStyles["underline"],
@@ -93,20 +93,112 @@ export default function TalkSection() {
                     talkStyles["h4"],
                   ].join(" ")}
                 >
-                  Getting started with SVG animation
+                  Building Todo REST API Backend Using NodeJS, Express And
+                  MongoDB
                 </h2>
                 <p className="mt-4">
-                  Animation is one of the best ways to bring brand personality
-                  and character to an online experience, but in the busy world
-                  of front-end development, it can often be overlooked.
+                  Representational State Transfer (REST) is an architectural
+                  pattern commonly used in developing modern web based
+                  applications ranging from websites, mobile apps, games and
+                  more. Developing a REST based API allows you to expose
+                  functionality of your web service over HTTP and interact with
+                  it over the web.
                 </p>
                 <p>
                   In this workshop we cover everything you need to know to get
-                  started with, and master SVG animation.
+                  started with, and build powerful REST APIs in NodeJS.
                 </p>
               </a>
             </div>
           </div>
+          {/* row 2 */}
+          <div className="row mt-5">
+            <div className="col-md-4">
+              <p
+                className={[
+                  talkStyles["Card__type"],
+                  talkStyles["font-cursive"],
+                  talkStyles["h6"],
+                ].join(" ")}
+              >
+                webinar
+              </p>
+            </div>
+            <div className="col-md-8">
+              <a
+                href="https://www.youtube.com/watch?v=_RD8WFtfB3U"
+                className={[
+                  CardLink,
+                  talkStyles["underline"],
+                  talkStyles["sf-flow"],
+                ].join(" ")}
+              >
+                <h2
+                  className={[
+                    talkStyles["underline__text"],
+                    talkStyles["h4"],
+                  ].join(" ")}
+                >
+                  Introduction To Open Source And Participate In Hacktoberfest
+                </h2>
+                <p className="mt-4">
+                  Open Source remove barriers between innovators, and promotes a
+                  free exchange of ideas within a community to drive creative,
+                  scientific and technological advancement.
+                </p>
+                <p>
+                  So in this webinar we will see, Introduction To Open Source
+                  and How to participate and contribute into open source
+                  projects.
+                </p>
+              </a>
+            </div>
+          </div>
+          {/* row 3 */}
+          <div className="row mt-5">
+            <div className="col-md-4">
+              <p
+                className={[
+                  talkStyles["Card__type"],
+                  talkStyles["font-cursive"],
+                  talkStyles["h6"],
+                ].join(" ")}
+              >
+                mentoring
+              </p>
+            </div>
+            <div className="col-md-8">
+              <a
+                href="https://www.youtube.com/watch?v=BxXB73iFcTE"
+                className={[
+                  CardLink,
+                  talkStyles["underline"],
+                  talkStyles["sf-flow"],
+                ].join(" ")}
+              >
+                <h2
+                  className={[
+                    talkStyles["underline__text"],
+                    talkStyles["h4"],
+                  ].join(" ")}
+                >
+                  Web Development Best Practices for Beginners
+                </h2>
+                <p className="mt-4">
+                  As a beiginners we make many mistakes while learning and also
+                  we are not aware of fundamental things that we should take
+                  into consideration while developing apllications
+                </p>
+                <p>
+                  So in this training session we will see, Web Development Best
+                  Practices and how to use GIT and GITHUB and importance of
+                  Responsive design and how we can achieve responsiveness using
+                  FLEX BOX.
+                </p>
+              </a>
+            </div>
+          </div>
+          {/* row end */}
         </div>
       </section>
     </>
