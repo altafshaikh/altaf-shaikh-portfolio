@@ -15,7 +15,7 @@ function MyApp({ Component, pageProps }) {
   const [theme, setTheme] = useState({
     beamOpacity: "0",
     beamAnimate: "",
-    mode: "light",
+    mode: "dark",
   });
 
   const toggleDarkMode = (event) => {
