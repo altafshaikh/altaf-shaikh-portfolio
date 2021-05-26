@@ -4,7 +4,7 @@ import "../fontawesome/fontawesome";
 
 // import { toggleDarkMode } from/ "../components/darkMode";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { ThemeProvider } from "styled-components";
 import { GlobalStyles } from "../components/global";
 import { lightTheme, darkTheme } from "../components/theme";
@@ -18,6 +18,23 @@ function MyApp({ Component, pageProps }) {
     mode: "dark",
   });
 
+  useEffect(() => {
+    if (localStorage.getItem("mode") == null) {
+      localStorage.setItem("mode", "dark");
+    } else {
+      console.log(localStorage.getItem("mode"));
+      if (localStorage.getItem("mode") === "dark") {
+        setTheme({
+          beamOpacity: "0.45",
+          beamAnimate: "light-effect",
+          mode: "dark",
+        });
+      } else {
+        setTheme({ beamOpacity: "0", beamAnimate: "", mode: "light" });
+      }
+    }
+  }, []);
+
   const toggleDarkMode = (event) => {
     if (theme.mode === "light") {
       setTheme({
@@ -25,8 +42,10 @@ function MyApp({ Component, pageProps }) {
         beamAnimate: "light-effect",
         mode: "dark",
       });
+      localStorage.setItem("mode", "dark");
     } else {
       setTheme({ beamOpacity: "0", beamAnimate: "", mode: "light" });
+      localStorage.setItem("mode", "light");
     }
   };
 
