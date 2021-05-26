@@ -46,7 +46,7 @@ export default function topNavbar({ logo }) {
             <Nav.Link href="#workshop" className={`${navTheme}`}>
               Workshop
             </Nav.Link>
-            <Link href="http://tutorial.teachmebro.com/">
+            <Link href="https://tutorial.teachmebro.com/">
               <a
                 className={["nav-link", `${navTheme}`].join(" ")}
                 target="_blank"

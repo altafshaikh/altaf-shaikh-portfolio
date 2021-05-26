@@ -45,7 +45,10 @@ export default function BottomNavbar() {
             </i>
             Talks
           </Nav.Link>
-          <Nav.Link href="#tutorials" className={`${navTheme}`}>
+          <Nav.Link
+            href="https://tutorial.teachmebro.com"
+            className={`${navTheme}`}
+          >
             <i
               className="fa fa-book"
               aria-hidden="true"
