@@ -138,18 +138,19 @@ export default class BlogSection extends React.Component {
                 bounds={{ top: -300, left: -100, right: 700, bottom: 300 }}
                 {...dragHandlers}
               > */}
-              <a
-                href={this.props.blogData["1"]["url"]}
-                style={{ textDecoration: "none" }}
-              >
-                <div className={blogStyles["card2"]}>
+
+              <div className={blogStyles["card2"]}>
+                <a
+                  href={this.props.blogData["1"]["url"]}
+                  style={{ textDecoration: "none" }}
+                >
                   <BlogCard
                     blog={this.props.blogData["1"]}
                     cardBrowser={cardBrowser}
                     hrLine={hrLine}
                   />
-                </div>
-              </a>
+                </a>
+              </div>
               {/* </Draggable> */}
             </div>
             <div className={["row", blogStyles["row3"]].join(" ")}>
@@ -157,18 +158,19 @@ export default class BlogSection extends React.Component {
                 bounds={{ top: -500, left: -550, right: 400, bottom: 100 }}
                 {...dragHandlers}
               > */}
-              <a
-                href={this.props.blogData["2"]["url"]}
-                style={{ textDecoration: "none" }}
-              >
-                <div className="col-lg-6" className={blogStyles["card3"]}>
+
+              <div className="col-lg-6" className={blogStyles["card3"]}>
+                <a
+                  href={this.props.blogData["2"]["url"]}
+                  style={{ textDecoration: "none" }}
+                >
                   <BlogCard
                     blog={this.props.blogData["2"]}
                     cardBrowser={cardBrowser}
                     hrLine={hrLine}
                   />
-                </div>
-              </a>
+                </a>
+              </div>
               {/* </Draggable> */}
               <div className="col-lg-5 d-flex align-items-center justify-content-center">
                 <a
