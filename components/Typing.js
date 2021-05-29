@@ -5,10 +5,10 @@ class Typing extends React.Component {
   componentDidMount() {
     const options = {
       strings: [
-        "<span class='outline'>a Web Developer</span>",
+        "<span class='outline'>a Backend Engineer</span>",
+        "<span class='outline'>Love Web</span>",
         "<span class='outline'>a YouTuber</span>",
         "<span class='outline'>an Educator</span>",
-        "<span class='outline'>a Freelancer</span>",
       ],
       typeSpeed: 100,
       backSpeed: 50,
