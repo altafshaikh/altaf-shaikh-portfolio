@@ -43,9 +43,7 @@ export default function topNavbar({ logo }) {
             <Nav.Link href="#talks" className={`${navTheme}`}>
               Talks
             </Nav.Link>
-            <Nav.Link href="#workshop" className={`${navTheme}`}>
-              Workshop
-            </Nav.Link>
+
             <Link href="https://tutorial.teachmebro.com/">
               <a
                 className={["nav-link", `${navTheme}`].join(" ")}
@@ -55,7 +53,7 @@ export default function topNavbar({ logo }) {
               </a>
             </Link>
             <Nav.Link href="#about" className={`${navTheme}`}>
-              About
+              About Me
             </Nav.Link>
           </Nav>
         </Navbar.Collapse>
