@@ -1,0 +1,3 @@
+fileignoreconfig:
+- filename: Dockerfile
+  checksum: 598f45a93a1fa70fe98948004c2c1201fe9563a928dc834c7734a4c47c24b013
