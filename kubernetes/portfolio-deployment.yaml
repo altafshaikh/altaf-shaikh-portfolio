@@ -1,0 +1,30 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  labels:
+    app: altaf-shaikh-portfolio-nextjs-deployment
+  name: altaf-shaikh-portfolio-nextjs-deployment
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: altaf-shaikh-portfolio-nextjs-pod
+      type: next-js-frontend-app-pod
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      name: altaf-shaikh-portfolio-nextjs-pod
+      labels:
+        app: altaf-shaikh-portfolio-nextjs-pod
+        type: next-js-frontend-app-pod
+    spec:
+      containers:
+      - image: altafshaikh/next-js-portfolio-app:latest
+        name: next-js-portfolio-app
+        resources: {}
+        ports:
+          - containerPort: 3000
+            protocol: TCP
+status: {}
