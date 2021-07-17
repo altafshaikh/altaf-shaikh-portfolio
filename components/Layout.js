@@ -13,6 +13,10 @@ export default function Layout({
         <meta charSet="utf-8" />
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         <meta name="description" content="This is a Portfolio website of Altaf Shaikh and he is a Backend Engineer" />
+        {/* allow all crawler to index the page */}
+        <meta name="robots" content="all"/>
+
+
         <link
           rel="icon"
           type="image/png"
