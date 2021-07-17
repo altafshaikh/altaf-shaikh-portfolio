@@ -23,7 +23,11 @@ spec:
       containers:
       - image: altafshaikh/next-js-portfolio-app:latest
         name: next-js-portfolio-app
-        resources: {}
+        resources:
+          limits:
+              cpu: 300m
+          requests:
+            cpu: 100m
         ports:
           - containerPort: 3000
             protocol: TCP
