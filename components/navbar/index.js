@@ -48,6 +48,7 @@ export default function topNavbar({ logo }) {
               <a
                 className={["nav-link", `${navTheme}`].join(" ")}
                 target="_blank"
+                rel="noopener"
               >
                 Tutorials
               </a>

@@ -50,6 +50,8 @@ export default function ContactMe() {
                   <a
                     href="https://www.instagram.com/ialtafshaikh/"
                     className={socialLink}
+                    rel="noopener"
+                    target="_blank"
                   >
                     <i
                       className="fa fa-instagram fa-lg p-2"
@@ -59,6 +61,8 @@ export default function ContactMe() {
                   <a
                     href="https://www.youtube.com/channel/UCTSIdPsYXRRp5ABnuw_-uOA"
                     className={socialLink}
+                    rel="noopener"
+                    target="_blank"
                   >
                     <i
                       className="fa fa-youtube fa-lg p-2"
@@ -68,6 +72,8 @@ export default function ContactMe() {
                   <a
                     href="https://github.com/altafshaikh/"
                     className={socialLink}
+                    rel="noopener"
+                    target="_blank"
                   >
                     <i
                       className="fa fa-github fa-lg p-2"
@@ -77,6 +83,8 @@ export default function ContactMe() {
                   <a
                     href="https://www.linkedin.com/in/ialtafshaikh/"
                     className={socialLink}
+                    rel="noopener"
+                    target="_blank"
                   >
                     <i
                       className="fa fa-linkedin fa-lg p-2"
@@ -86,6 +94,8 @@ export default function ContactMe() {
                   <a
                     href="https://twitter.com/ialtafshaikh"
                     className={socialLink}
+                    rel="noopener"
+                    target="_blank"
                   >
                     <i
                       className="fa fa-twitter fa-lg p-2"
