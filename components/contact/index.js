@@ -1,6 +1,6 @@
-import contactStyles from "./index.module.scss";
-
 import React, { useContext } from "react";
+
+import contactStyles from "./index.module.scss";
 import { themeContext } from "../../pages/_app";
 
 export default function ContactMe() {

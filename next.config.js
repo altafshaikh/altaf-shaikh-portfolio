@@ -6,6 +6,7 @@ module.exports = (phase, { defaultConfig }) => {
     images: {
       domains: [
         "altafshaikh.github.io",
+        "altafshaikh.ml"
       ],
     },
     pwa: {
