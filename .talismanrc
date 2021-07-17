@@ -9,3 +9,5 @@ fileignoreconfig:
   checksum: e0739175fd7ddf78a7062e8ec8d230eac44cc3c8a7bb33b339ac0c663517bb0f
 - filename: public/workbox-6b19f60b.js.map
   checksum: 67ab6d604f55310c91a575361471779a2ed1405f7f093eb4787d6208451c1239
+- filename: public/sw.js.map
+  checksum: e629986e7baac6cd2da904da8853a7a9bbc98ecc2264838592df094bf9ef950a
