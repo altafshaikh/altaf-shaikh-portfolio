@@ -1,3 +1,11 @@
 fileignoreconfig:
 - filename: Dockerfile
   checksum: 598f45a93a1fa70fe98948004c2c1201fe9563a928dc834c7734a4c47c24b013
+- filename: public/sw.js.map
+  checksum: d4f6e69b91a7da80fe6b0a5a3347a545e81524715e06acdc7ad4a49f61bf51eb
+- filename: package-lock.json
+  checksum: c14e2912fb58d7af5db43a5cf29d57ca23c0c2230b509840fedf6996047ad884
+- filename: public/workbox-6b19f60b.js
+  checksum: e0739175fd7ddf78a7062e8ec8d230eac44cc3c8a7bb33b339ac0c663517bb0f
+- filename: public/workbox-6b19f60b.js.map
+  checksum: 67ab6d604f55310c91a575361471779a2ed1405f7f093eb4787d6208451c1239

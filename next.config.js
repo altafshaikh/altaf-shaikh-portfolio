@@ -1,13 +1,16 @@
+const withPWA = require('next-pwa')
+const runtimeCaching = require('next-pwa/cache')
+
 module.exports = (phase, { defaultConfig }) => {
-  return {
+  return withPWA({
     images: {
       domains: [
-        "images.contentstack.io",
-        "www.contentstack.com",
-        "www.raweng.com",
-        "www.surfboardventures.com",
         "altafshaikh.github.io",
       ],
     },
-  };
+    pwa: {
+      dest: 'public',
+      runtimeCaching,
+    },
+  })
 };

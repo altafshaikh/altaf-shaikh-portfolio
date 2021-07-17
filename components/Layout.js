@@ -16,6 +16,9 @@ export default function Layout({
         {/* allow all crawler to index the page */}
         <meta name="robots" content="all"/>
 
+        <link rel="manifest" href="/manifest.json" />
+        <link rel="apple-touch-icon" href="/apple-icon.png"></link>
+        <meta name="theme-color" content="#317EFB" />
 
         <link
           rel="icon"
