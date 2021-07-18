@@ -16,7 +16,7 @@ This is My Portfolio website build using Next JS - React Framework
 
 ## System Architecture
 
-![altaf shaikh portfolio system architecture]
+![altaf shaikh portfolio system architecture](https://raw.githubusercontent.com/altafshaikh/static-file-storage/master/images/Portfolio%20System%20Architechture.png)
 
 ## Demo
 
