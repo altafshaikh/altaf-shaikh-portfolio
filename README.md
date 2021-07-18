@@ -1,22 +1,34 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Altaf Shaikh - Portfolio Web App
 
-## Getting Started
+This is My Portfolio website build using Next JS - React Framework
+
+## Features
+
+* Dark Mode Enabled 🔥
+* Supports Server Side and Client Side rendering
+* Uses Github as a `JSON Server` to serve the data for the app
+* Progressive Web APP Enabled
+* Component Based
+* Highly Modularized
+* Dockerized
+* Configured to run on Kubernetes Cluster
+* SEO Friendly
+
+## System Architecture
+
+![altaf shaikh portfolio system architecture]
+
+## Demo
+
+## Getting Started - How to run the Project
 
 First, run the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
-
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
-
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
 
 ## Learn More
 
@@ -29,6 +41,6 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 
 ## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+App is Deployed on Vercel Platform.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
