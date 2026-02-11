@@ -26,7 +26,7 @@ export default function Navbar() {
       <motion.nav
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
           scrolled
-            ? "glass shadow-lg shadow-black/20"
+            ? "glass-nav shadow-lg shadow-black/30"
             : "bg-transparent"
         }`}
         initial={{ y: -100 }}
