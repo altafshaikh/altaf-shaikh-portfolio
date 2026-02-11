@@ -23,6 +23,7 @@ function pick<T>(obj: any, keys: string[]): T {
 // ── Hero ──
 
 export async function getHeroData(): Promise<HeroData> {
+  if (!stack) return fallbackData.hero;
   try {
     const result = await stack
       .contentType("hero_section")
@@ -53,6 +54,7 @@ export async function getHeroData(): Promise<HeroData> {
 // ── Skills ──
 
 export async function getSkills(): Promise<SkillItem[]> {
+  if (!stack) return fallbackData.skills;
   try {
     const result = await stack
       .contentType("skill_item")
@@ -61,9 +63,7 @@ export async function getSkills(): Promise<SkillItem[]> {
     if (result.entries?.length) {
       return result.entries
         .sort((a: any, b: any) => (a.order ?? 99) - (b.order ?? 99))
-        .map((e: any) =>
-          pick<SkillItem>(e, ["name", "icon", "category"])
-        );
+        .map((e: any) => pick<SkillItem>(e, ["name", "icon", "category"]));
     }
   } catch (err) {
     console.warn("[CMS] skill_item fetch failed, using fallback:", err);
@@ -74,6 +74,7 @@ export async function getSkills(): Promise<SkillItem[]> {
 // ── Stats ──
 
 export async function getStats(): Promise<StatItem[]> {
+  if (!stack) return fallbackData.stats;
   try {
     const result = await stack
       .contentType("stat_item")
@@ -93,6 +94,7 @@ export async function getStats(): Promise<StatItem[]> {
 // ── Blogs ──
 
 export async function getBlogs(): Promise<BlogPost[]> {
+  if (!stack) return fallbackData.blogs;
   try {
     const result = await stack
       .contentType("blog_post")
@@ -117,6 +119,7 @@ export async function getBlogs(): Promise<BlogPost[]> {
 // ── Talks ──
 
 export async function getTalks(): Promise<Talk[]> {
+  if (!stack) return fallbackData.talks;
   try {
     const result = await stack
       .contentType("talk")
@@ -143,6 +146,7 @@ export async function getTalks(): Promise<Talk[]> {
 // ── Social Links ──
 
 export async function getSocialLinks(): Promise<SocialLinks> {
+  if (!stack) return fallbackData.social;
   try {
     const result = await stack
       .contentType("social_links")
