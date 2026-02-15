@@ -133,7 +133,7 @@ export async function getTalks(): Promise<Talk[]> {
         videoUrl: e.video_url,
         thumbnail:
           e.thumbnail_url ??
-          `https://img.youtube.com/vi/${extractYouTubeId(e.video_url)}/maxresdefault.jpg`,
+          `https://img.youtube.com/vi/${extractYouTubeId(e.video_url)}/hqdefault.jpg`,
         isFeatured: e.is_featured ?? false,
       }));
     }

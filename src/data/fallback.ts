@@ -108,7 +108,7 @@ export const fallbackData = {
         "Fundamental best practices for developing applications, covering GIT, GITHUB, responsive design, and how to achieve responsiveness using Flexbox.",
       videoUrl: "https://www.youtube.com/watch?v=BxXB73iFcTE",
       thumbnail:
-        "https://img.youtube.com/vi/BxXB73iFcTE/maxresdefault.jpg",
+        "https://img.youtube.com/vi/BxXB73iFcTE/hqdefault.jpg",
       isFeatured: false,
     },
     {
@@ -119,7 +119,7 @@ export const fallbackData = {
         "Open Source removes barriers between innovators and promotes a free exchange of ideas. Learn how to participate and contribute to open source projects.",
       videoUrl: "https://www.youtube.com/watch?v=_RD8WFtfB3U",
       thumbnail:
-        "https://img.youtube.com/vi/_RD8WFtfB3U/maxresdefault.jpg",
+        "https://img.youtube.com/vi/_RD8WFtfB3U/hqdefault.jpg",
       isFeatured: false,
     },
     {
@@ -130,7 +130,7 @@ export const fallbackData = {
         "Developing a REST based API allows you to expose functionality of your web service over HTTP. In this workshop we cover everything you need to know to build powerful REST APIs in NodeJS.",
       videoUrl: "https://www.youtube.com/watch?v=hsGOl_28R10",
       thumbnail:
-        "https://img.youtube.com/vi/hsGOl_28R10/maxresdefault.jpg",
+        "https://img.youtube.com/vi/hsGOl_28R10/hqdefault.jpg",
       isFeatured: true,
     },
   ] satisfies Talk[],
