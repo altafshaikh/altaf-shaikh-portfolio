@@ -131,9 +131,10 @@ export async function getTalks(): Promise<Talk[]> {
         type: e.type,
         description: e.description,
         videoUrl: e.video_url,
-        thumbnail:
-          e.thumbnail_url ??
-          `https://img.youtube.com/vi/${extractYouTubeId(e.video_url)}/hqdefault.jpg`,
+        thumbnail: toReliableThumb(
+          e.thumbnail_url,
+          extractYouTubeId(e.video_url)
+        ),
         isFeatured: e.is_featured ?? false,
       }));
     }
@@ -174,4 +175,15 @@ function extractYouTubeId(url: string): string {
     /(?:youtu\.be\/|youtube\.com\/(?:watch\?v=|embed\/))([^&?/]+)/
   );
   return match?.[1] ?? "";
+}
+
+/** Convert any YouTube thumbnail URL to the reliable hqdefault variant. */
+function toReliableThumb(url: string | undefined, videoId: string): string {
+  if (!url && !videoId) return "";
+  // If it's a YouTube thumbnail URL, normalise to hqdefault (always available)
+  if (url && /img\.youtube\.com|i\.ytimg\.com/.test(url)) {
+    const id = extractYouTubeId(`https://youtube.com/watch?v=${url.split("/vi/")[1]?.split("/")[0] ?? videoId}`);
+    return `https://img.youtube.com/vi/${id || videoId}/hqdefault.jpg`;
+  }
+  return url || `https://img.youtube.com/vi/${videoId}/hqdefault.jpg`;
 }
