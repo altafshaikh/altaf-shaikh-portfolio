@@ -1,8 +1,8 @@
 "use client";
 
-import Image from "next/image";
 import { motion } from "motion/react";
 import GradientButton from "@/components/ui/GradientButton";
+import CoinFlip from "@/components/ui/CoinFlip";
 import type { HeroData } from "@/data/fallback";
 
 const containerVariants = {
@@ -26,7 +26,7 @@ export default function HeroSection({ data }: { data: HeroData }) {
   return (
     <section className="min-h-screen flex items-center pt-20 pb-16 px-6">
       <div className="max-w-7xl mx-auto w-full grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-        {/* Profile Image */}
+        {/* Coin-flip Profile */}
         <motion.div
           className="flex justify-center md:justify-start order-1 md:order-1"
           initial={{ opacity: 0, scale: 0.8 }}
@@ -35,16 +35,7 @@ export default function HeroSection({ data }: { data: HeroData }) {
         >
           <div className="relative">
             <div className="aura-glow">
-              <div className="w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 rounded-full overflow-hidden border-2 border-white/10 bg-dark-surface">
-                <Image
-                  src="/images/altaf-profile.png"
-                  alt="Altaf Shaikh - Software Developer, Speaker, Educator"
-                  width={384}
-                  height={384}
-                  className="w-full h-full object-cover object-top"
-                  priority
-                />
-              </div>
+              <CoinFlip />
             </div>
           </div>
         </motion.div>
