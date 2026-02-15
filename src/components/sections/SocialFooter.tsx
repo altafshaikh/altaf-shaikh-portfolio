@@ -62,7 +62,7 @@ export default function SocialFooter() {
         {/* Bottom */}
         <div className="text-center text-text-secondary text-xs font-mono">
           <p className="mb-1">
-            Built with Next.js, Tailwind CSS & Contentstack
+            Built by AI and Powered by Contentstack
           </p>
           <p>&copy; {new Date().getFullYear()} Altaf Shaikh. All rights reserved.</p>
         </div>

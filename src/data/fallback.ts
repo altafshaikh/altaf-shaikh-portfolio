@@ -69,8 +69,8 @@ export const fallbackData = {
 
   stats: [
     { value: "5+", label: "Years Experience" },
-    { value: "500+", label: "Students Mentored" },
-    { value: "15+", label: "Public Talks" },
+    { value: "500+", label: "Students Impacted" },
+    { value: "10+", label: "Public Talks" },
   ] satisfies StatItem[],
 
   blogs: [

@@ -105,6 +105,22 @@
   animation: marquee 20s linear infinite;
 }
 
+/* ── Tech Marquee ── */
+@keyframes techScroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.tech-marquee-track {
+  display: flex;
+  width: max-content;
+  animation: techScroll 30s linear infinite;
+}
+
+.tech-marquee-track:hover {
+  animation-play-state: paused;
+}
+
 /* ── Glitch Effect ── */
 @keyframes glitch {
   0% { clip-path: inset(0 100% 0 0); }

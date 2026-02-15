@@ -6,9 +6,11 @@ import {
   getTalks,
 } from "@/lib/api";
 import HeroSection from "@/components/sections/HeroSection";
+import AboutSection from "@/components/sections/AboutSection";
 import BentoGridSkills from "@/components/sections/BentoGridSkills";
-import DisruptionBlogs from "@/components/sections/DisruptionBlogs";
+import ImpactSection from "@/components/sections/ImpactSection";
 import TalksSection from "@/components/sections/TalksSection";
+import DisruptionBlogs from "@/components/sections/DisruptionBlogs";
 
 export default async function Home() {
   const [hero, skills, stats, blogs, talks] = await Promise.all([
@@ -22,9 +24,11 @@ export default async function Home() {
   return (
     <main>
       <HeroSection data={hero} />
-      <BentoGridSkills skills={skills} stats={stats} />
-      <DisruptionBlogs blogs={blogs} />
+      <AboutSection />
+      <BentoGridSkills skills={skills} />
+      <ImpactSection stats={stats} />
       <TalksSection talks={talks} />
+      <DisruptionBlogs blogs={blogs} />
     </main>
   );
 }
