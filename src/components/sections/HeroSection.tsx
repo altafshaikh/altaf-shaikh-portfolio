@@ -28,7 +28,7 @@ export default function HeroSection({ data }: { data: HeroData }) {
       <div className="max-w-7xl mx-auto w-full grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
         {/* Coin-flip Profile */}
         <motion.div
-          className="flex justify-center md:justify-start order-1 md:order-1"
+          className="flex justify-center order-1 md:order-1"
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
