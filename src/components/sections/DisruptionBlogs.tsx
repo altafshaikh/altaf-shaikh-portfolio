@@ -19,14 +19,15 @@ function BlogCard({ blog, index }: { blog: BlogPost; index: number }) {
       whileInView="visible"
       viewport={{ once: true, margin: "-60px" }}
       transition={{ duration: 0.5, delay: index * 0.15 }}
+      className="h-full"
     >
       <a
         href={blog.url}
         target="_blank"
         rel="noopener noreferrer"
-        className="block group"
+        className="block group h-full"
       >
-        <GlassCard className="h-full relative overflow-hidden transition-transform duration-300 group-hover:-translate-y-2">
+        <GlassCard className="h-full relative overflow-hidden transition-transform duration-300 group-hover:-translate-y-2 flex flex-col">
           {/* Tag */}
           <div className="flex items-center justify-between mb-4">
             <span className="text-xs font-mono px-3 py-1 rounded-full bg-electric-blue/10 text-electric-blue border border-electric-blue/20">
@@ -46,12 +47,12 @@ function BlogCard({ blog, index }: { blog: BlogPost; index: number }) {
           </h3>
 
           {/* Excerpt */}
-          <p className="text-text-secondary text-sm leading-relaxed mb-6">
+          <p className="text-text-secondary text-sm leading-relaxed mb-6 flex-1">
             {blog.excerpt}
           </p>
 
           {/* Read More - Glitch reveal */}
-          <div className="relative overflow-hidden">
+          <div className="relative overflow-hidden mt-auto">
             <div className="flex items-center gap-2 text-sm font-mono text-electric-blue glitch-reveal">
               <span>Read More</span>
               <ArrowUpRight className="w-4 h-4" />
