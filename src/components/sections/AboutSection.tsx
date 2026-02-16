@@ -30,12 +30,20 @@ const highlights = [
   },
 ];
 
+function LineNum({ n }: { n: number }) {
+  return (
+    <span className="select-none text-white/15 w-8 inline-block text-right mr-4 text-xs">
+      {n}
+    </span>
+  );
+}
+
 export default function AboutSection() {
   return (
     <section className="py-16 px-6">
       <div className="max-w-6xl mx-auto">
-        <div className="grid grid-cols-1 lg:grid-cols-5 gap-8 items-center">
-          {/* Left: highlight pills - 2 cols */}
+        <div className="grid grid-cols-1 lg:grid-cols-5 gap-8 items-start">
+          {/* Left: highlight pills */}
           <motion.div
             className="lg:col-span-2 grid grid-cols-2 gap-4"
             initial={{ opacity: 0, x: -30 }}
@@ -65,7 +73,7 @@ export default function AboutSection() {
             ))}
           </motion.div>
 
-          {/* Right: text content - 3 cols */}
+          {/* Right: terminal-style code block */}
           <motion.div
             className="lg:col-span-3"
             initial={{ opacity: 0, x: 30 }}
@@ -73,33 +81,154 @@ export default function AboutSection() {
             viewport={{ once: true, margin: "-60px" }}
             transition={{ duration: 0.6, delay: 0.2 }}
           >
-            <p className="text-text-secondary text-sm font-mono uppercase tracking-wider mb-3">
-              About Me
-            </p>
-            <h2 className="font-mono text-2xl md:text-3xl font-bold leading-snug mb-6">
-              <span className="gradient-text">
-                I build things for the web
-              </span>{" "}
-              <span className="text-white/90">&amp; teach others to do the same.</span>
-            </h2>
-            <div className="space-y-4 text-text-secondary leading-relaxed text-sm md:text-base">
-              <p>
-                I&apos;m a Software Development Engineer who thrives at the
-                intersection of{" "}
-                <span className="text-electric-blue font-medium">clean code</span>,{" "}
-                <span className="text-cyber-purple font-medium">modern tooling</span>, and{" "}
-                <span className="text-cyan-accent font-medium">developer education</span>.
-                With 5+ years of hands-on experience shipping production apps,
-                I&apos;ve built everything from REST APIs and microservices to
-                AI-powered frontends.
-              </p>
-              <p>
-                Beyond the terminal, I&apos;m a public speaker and educator
-                &mdash; I&apos;ve mentored 500+ students, delivered 10+ talks
-                and workshops, and contributed to the open-source community. I
-                believe great engineers are made by sharing knowledge, not
-                hoarding it.
-              </p>
+            <div className="rounded-2xl border border-white/10 bg-[#0d0d0d] overflow-hidden shadow-2xl">
+              {/* Window chrome */}
+              <div className="flex items-center gap-2 px-4 py-3 border-b border-white/5 bg-white/[0.02]">
+                <div className="w-3 h-3 rounded-full bg-[#ff5f57]" />
+                <div className="w-3 h-3 rounded-full bg-[#febc2e]" />
+                <div className="w-3 h-3 rounded-full bg-[#28c840]" />
+                <span className="ml-3 text-xs font-mono text-white/30">
+                  about-altaf.ts
+                </span>
+              </div>
+
+              {/* Code content */}
+              <div className="p-5 font-mono text-sm leading-7 overflow-x-auto">
+                {/* Line 1: comment */}
+                <div>
+                  <LineNum n={1} />
+                  <span className="text-white/30">
+                    {"// "}Who am I?
+                  </span>
+                </div>
+
+                {/* Line 2: blank */}
+                <div>
+                  <LineNum n={2} />
+                </div>
+
+                {/* Line 3: const */}
+                <div>
+                  <LineNum n={3} />
+                  <span className="text-cyber-purple">const</span>{" "}
+                  <span className="text-electric-blue">altaf</span>{" "}
+                  <span className="text-white/50">=</span>{" "}
+                  <span className="text-white/50">{"{"}</span>
+                </div>
+
+                {/* Line 4: role */}
+                <div>
+                  <LineNum n={4} />
+                  <span className="text-white/20 ml-8">{"  "}</span>
+                  <span className="text-cyan-accent">role</span>
+                  <span className="text-white/40">:</span>{" "}
+                  <span className="text-[#a5d6a7]">
+                    &quot;Software Development Engineer&quot;
+                  </span>
+                  <span className="text-white/40">,</span>
+                </div>
+
+                {/* Line 5: passion */}
+                <div>
+                  <LineNum n={5} />
+                  <span className="text-white/20 ml-8">{"  "}</span>
+                  <span className="text-cyan-accent">passion</span>
+                  <span className="text-white/40">:</span>{" "}
+                  <span className="text-white/50">[</span>
+                  <span className="text-[#a5d6a7]">&quot;clean code&quot;</span>
+                  <span className="text-white/40">, </span>
+                  <span className="text-[#a5d6a7]">&quot;modern tooling&quot;</span>
+                  <span className="text-white/40">, </span>
+                  <span className="text-[#a5d6a7]">&quot;dev education&quot;</span>
+                  <span className="text-white/50">]</span>
+                  <span className="text-white/40">,</span>
+                </div>
+
+                {/* Line 6: experience */}
+                <div>
+                  <LineNum n={6} />
+                  <span className="text-white/20 ml-8">{"  "}</span>
+                  <span className="text-cyan-accent">experience</span>
+                  <span className="text-white/40">:</span>{" "}
+                  <span className="text-[#f9a825]">5</span>
+                  <span className="text-white/40">,</span>{" "}
+                  <span className="text-white/30">
+                    {"// "}years shipping production apps
+                  </span>
+                </div>
+
+                {/* Line 7: builds */}
+                <div>
+                  <LineNum n={7} />
+                  <span className="text-white/20 ml-8">{"  "}</span>
+                  <span className="text-cyan-accent">builds</span>
+                  <span className="text-white/40">:</span>{" "}
+                  <span className="text-[#a5d6a7]">
+                    &quot;REST APIs → Microservices → AI Frontends&quot;
+                  </span>
+                  <span className="text-white/40">,</span>
+                </div>
+
+                {/* Line 8: students */}
+                <div>
+                  <LineNum n={8} />
+                  <span className="text-white/20 ml-8">{"  "}</span>
+                  <span className="text-cyan-accent">studentsImpacted</span>
+                  <span className="text-white/40">:</span>{" "}
+                  <span className="text-[#f9a825]">500</span>
+                  <span className="text-white/40">,</span>
+                </div>
+
+                {/* Line 9: talks */}
+                <div>
+                  <LineNum n={9} />
+                  <span className="text-white/20 ml-8">{"  "}</span>
+                  <span className="text-cyan-accent">publicTalks</span>
+                  <span className="text-white/40">:</span>{" "}
+                  <span className="text-[#f9a825]">10</span>
+                  <span className="text-white/40">,</span>
+                </div>
+
+                {/* Line 10: motto */}
+                <div>
+                  <LineNum n={10} />
+                  <span className="text-white/20 ml-8">{"  "}</span>
+                  <span className="text-cyan-accent">motto</span>
+                  <span className="text-white/40">:</span>{" "}
+                  <span className="text-[#a5d6a7]">
+                    &quot;Great engineers share knowledge, not hoard it.&quot;
+                  </span>
+                </div>
+
+                {/* Line 11: closing brace */}
+                <div>
+                  <LineNum n={11} />
+                  <span className="text-white/50">{"}"}</span>
+                  <span className="text-white/40">;</span>
+                </div>
+
+                {/* Line 12: blank */}
+                <div>
+                  <LineNum n={12} />
+                </div>
+
+                {/* Line 13: export */}
+                <div>
+                  <LineNum n={13} />
+                  <span className="text-cyber-purple">export default</span>{" "}
+                  <span className="text-electric-blue">altaf</span>
+                  <span className="text-white/40">;</span>
+                  <motion.span
+                    className="inline-block w-2 h-5 bg-electric-blue/70 ml-0.5 align-middle"
+                    animate={{ opacity: [1, 0] }}
+                    transition={{
+                      duration: 0.8,
+                      repeat: Infinity,
+                      repeatType: "reverse",
+                    }}
+                  />
+                </div>
+              </div>
             </div>
           </motion.div>
         </div>
